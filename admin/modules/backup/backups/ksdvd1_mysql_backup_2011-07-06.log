@@ -1,0 +1,9 @@
+2011-07-06 21:17:11: Executing MySQL Backup Script v1.4
+2011-07-06 21:17:11: Processing Databases..
+2011-07-06 21:17:11: Dumped DB: mysql
+2011-07-06 21:17:11: Compressed DB: mysql
+2011-07-06 21:17:15: Dumped DB: wes-shebeads
+2011-07-06 21:17:17: Compressed DB: wes-shebeads
+2011-07-06 21:17:17: Archiving files..
+2011-07-06 21:17:17: Backup complete!
+2011-07-06 21:17:17: Emailing backup to karl@webksd.com ..

@@ -1,0 +1,3259 @@
+
+/****************************/
+/* LOCAL CSS                */
+/****************************/
+
+/* STATIC H2 REMOVAL (DOUBLE TITLES) */
+body#pid-meet-the-team #content-content h2:first-of-type,
+body.page-artist #artistpage_song_div h2:first-of-type,
+body.page-artist #artistpage_editperformances_div h2:first-of-type,
+body.page-artist #artistpage_profile_div h2:first-of-type,
+body.page-artist #artistpage_performances_div h2:first-of-type,
+body.page-artist #artistpage_allsongs_div h2:first-of-type,
+body.page-artist #artistpage_artist_div h2:first-of-type,
+body.page-artist #artistpage_artistperm_div h2:first-of-type,
+body.page-artist #artistpage_jobsubm_div h2:first-of-type,
+body.page-artist #artistpage_private_songs_div h2:first-of-type,
+body.page-artist #artistpage_song_order_div h2:first-of-type,
+body.page-clients .pane-custom.pane-1 h2:first-of-type
+{
+  display:none !important;
+}
+
+a.plus-button:link, a.plus-button:visited, a.plus-button:hover, a.plus-button:active, a.song-upload-song:link, a.song-upload-song:visited, a.song-upload-song:hover, a.song-upload-song:active{
+  margin-top:0px !important;
+  margin-right:10px !important;
+}
+
+/* FORM STYLES */
+.view-gigs-for-artist{
+  border-bottom:1px solid #DDDDDD;
+  margin-top:30px;
+}
+
+/* STATIC REGISTRATION FORM STYLES */
+form#user-register legend{
+  display:none !important;
+}
+
+/* GLOBALS */
+div#content-tabs-inner.content-tabs-inner li { 
+  display:inline;
+}
+
+
+
+/* STATIC VIEW STYLES */
+td.views-field-field-song-review-status-value img{
+  width:16px;
+  height:16px;
+}
+
+td.views-field-tid img{
+  width:16px;
+  height:16px;
+}
+
+/* DEFAULT LINK STYLES */
+/*
+a,
+a:link, 
+a:visited{
+  color:#000;
+}
+*/
+a,
+a:visited{
+  color:#000;
+}
+
+/* FONT FACE */
+
+@font-face {
+    /*font-family: 'ITCFranklinGothicBkCompressed';*/
+    font-family: 'FranklinGothicBkCp';
+    src: url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd_bkcp-webfont.eot');
+    src: url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd_bkcp-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd_bkcp-webfont.woff') format('woff'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd_bkcp-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd_bkcp-webfont.svg#ITCFranklinGothicBkCompressed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    /*font-family: 'ITCFranklinGothiBkXCompressed';*/
+    font-family: 'FranklinGothicBkXCp';
+    src: url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd_bkxcp-webfont.eot');
+    src: url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd_bkxcp-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd_bkxcp-webfont.woff') format('woff'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd_bkxcp-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd_bkxcp-webfont.svg#ITCFranklinGothiBkXCompressed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    /*font-family: 'ITCFranklinGothicStdBkCn';*/
+    font-family: 'FranklinGothicBkCd';
+    src: url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-bkcd-webfont.eot');
+    src: url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-bkcd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-bkcd-webfont.woff') format('woff'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-bkcd-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-bkcd-webfont.svg#ITCFranklinGothicStdBkCn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    /*font-family: 'ITCFranklinGothicBkCompressed';*/
+    font-family: 'FranklinGothicBkCp';
+    src: url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-bkcp-webfont.eot');
+    src: url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-bkcp-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-bkcp-webfont.woff') format('woff'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-bkcp-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-bkcp-webfont.svg#ITCFranklinGothicBkCompressed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    /*font-family: 'ITCFranklinGothicStdMdCn';*/
+    font-family: 'FranklinGothicMdCd';
+    src: url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-mdcd-webfont.eot');
+    src: url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-mdcd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-mdcd-webfont.woff') format('woff'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-mdcd-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-mdcd-webfont.svg#ITCFranklinGothicStdMdCn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    /*font-family: 'ITCFranklinGothicStdMedium';*/
+    font-family: 'FranklinGothicMed';
+    src: url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-med-webfont.eot');
+    src: url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-med-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-med-webfont.woff') format('woff'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-med-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/md_fusion/fonts/webfontkit/itcfranklingothicstd-med-webfont.svg#ITCFranklinGothicStdMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+ background: url('../images/bg-body.jpeg') no-repeat 50% 0;
+ background-color: #4b4b4b;
+ font-family: Arial,Sans-serif;
+}
+
+/* TABLE RESET */
+td,th{
+  padding:0px;  
+}
+
+/* TITLE STYLES */
+h1, h2, h3, h4, h5 {
+    color: #ACACAC;
+    font-family: Arial,Sans-serif;
+}
+
+div#content-inner-inner.content-inner-inner h1.title {
+  display:none;
+}
+
+#mc_embed_signup h1{
+  font-family:FranklinGothicBkCp, Arial, sans-serif;
+  font-size: 30px;
+  color: #5a5b5b;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top:35px;
+  margin-bottom: 0;
+}
+
+#main-group h1.title, div.grid12-12 h1.title{
+  font-family: FranklinGothicBkXCp, Arial, sans-serif;
+  font-weight:normal;
+  /*line-height:100%;*/
+  font-size: 86px;
+  line-height: 120px;
+  height: 113px;
+  background-color: #363636;
+  color:#fff;
+  padding: 0px 0 0 79px ;
+  text-transform: uppercase;
+  border-bottom: 1px solid #DEDEDD;
+}
+
+div.grid12-12 h1.title{
+  /*font-size:50px !important;*/
+  float:right;
+  width:675px;
+}
+
+/*
+body#pid-node-*-edit div.grid12-12 h1.title{
+body.page-node{}
+  float:none;
+  width:auto;
+}
+*/
+
+#main-group h1.our_services {
+  background: url('/sites/all/themes/md_fusion/images/bg-ourServices.jpg') no-repeat;
+  /*padding-left: 160px;*/
+  text-indent:80px;
+}
+
+
+#main-group h1.about_music_dealers {
+  background: url('/sites/all/themes/md_fusion/images/bg-learnMore.jpg') no-repeat;
+  /*text-indent: 80px;*/
+}
+
+#main-group h2, fieldset legend, fieldset legend a{
+  font-family: Arial, sans-serif;
+  font-weight:normal;
+  color: #ADADAD;
+  font-size:22px;
+}
+
+.wide_content .pane-right h1{
+  font-family: FranklinGothicBkXCp, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 100%;
+  font-size: 86px;
+  color: #353535;
+  text-transform: uppercase;
+  margin:0;
+}
+
+.tickers span.thousands{
+  width:333px;
+}
+
+.wide_content .tickers h2{
+  padding:24px 0 0 40px;
+  color: #656666;
+  font-family: FranklinGothicMed,sans-serif !important;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 100%;
+}
+
+.wide_content .tickers h3{
+  padding:18px 30px 0 10px;
+}
+
+.wide_content  h3{
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  /*line-height: 115%;*/
+  padding-right: 40px;
+  color: #acacac;
+}
+
+.wide_content h5{
+  font-family: FranklinGothicMdCd, Arial, sans-serif;
+  color: #d42f24;
+  font-size:20px;
+  font-weight: normal;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.wide_content .got-music h5{
+  color: #0d64ad;
+}
+
+#main-group .wide_content  h2{
+  font-family: FranklinGothicMed, sans-serif;
+  font-size: 22px;
+  color: #656666;
+  font-weight: normal;
+  line-height: 100%;  
+}
+
+#not_found h1{
+  font-family: FranklinGothicBkXCp, Arial, sans-serif;
+  color: #656666;
+  font-size: 172px;
+  font-weight: normal;
+  line-height: 0.5;
+  margin-top: 30px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* END TITLE STYLES */
+
+.view-display-id-page_4 .view-header{
+  display:none; 
+}
+
+.block {
+  margin-bottom: 0;  
+}
+
+.block .inner {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.grid12-12{
+  background-color:#FFF;
+  width:1020px;
+}
+
+ul.search-menu li a{
+  color:#ACACAC;
+}
+
+/* FORMS */
+
+#mc_embed_signup{
+	background-color: #eeeeee ;
+	font-family:FranklinGothicBkCd, Arial, sans-serif;
+	font-size:20px;
+}
+.highlightedBox{
+	background-color: #dedede;
+	-moz-border-radius: 20px;
+	border-radius: 5px;
+	margin-top:38px;
+	padding: 16px;
+	
+}
+.highlightedBox .radio{
+	width:20px;
+}
+
+.highlightedBox p{
+	width:300px;
+	padding:0 20px;
+	clear: left;
+	font-family: FranklinGothicBkCd, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 100%;
+	margin-top:0;
+}
+
+.highlightedBox .last p {
+	width:375px;
+}
+
+.highlightedBox input:checked + label {
+    color:#0d64ad;
+}
+
+.wide_content .highlightedBox h3 {
+	color: #656666;
+	font-family:FranklinGothicBkCd, Arial, sans-serif;
+	font-size:20px;	
+}
+
+.wide_content .highlightedBox label {
+/*	color:#0d64ad;*/
+}
+
+
+form {
+	/*background-color: #EEE;*/
+}
+
+.block form fieldset{
+	padding-left:115px;
+	border:0;
+	margin-bottom: 0;
+	clear:both;
+	display:block;
+	float:left;
+}
+
+input, textarea, select {
+	display: inline-block;
+	height: 18px;
+	padding: 4px;
+	font-size: 13px;
+	line-height: 100%;
+	color: gray;
+	border-right: 1px solid #e1e1e1;
+	border-left: 1px solid #e1e1e1;
+	border-bottom:1px solid #f2f2f2;
+	border-top:2px solid #CCC;
+
+}
+
+#mc-embedded-subscribe-form input, 
+#mc-embedded-subscribe-form textarea,
+#mc-embedded-subscribe-form select{
+	height: 34px;
+	padding: 4px;
+	font-size: 20px;
+	line-height: 20px;	
+}
+
+#mc-embedded-subscribe-form input.btn{
+	padding: 11px 23px 0 23px;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: FranklinGothicBkXCp,Arial, sans-serif;
+	line-height: 100%;
+	height: 42px;
+	margin:20px 105px;
+}
+
+#mc-embedded-subscribe-form textarea{
+	height: 133px;
+}
+
+#mc-embedded-subscribe-form select{
+	background-image: -webkit-linear-gradient(top, #44474b, #0c0d0d);
+	background-image: -moz-linear-gradient(top, #44474b, #0c0d0d);
+	background-image: -ms-linear-gradient(#44474b, #0c0d0d);
+	background-image: -o-linear-gradient(#44474b, #0c0d0d);
+	background-image: linear-gradient(#44474b, #0c0d0d);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#44474b', endColorstr='#0c0d0d', GradientType=0);	
+	color:#dedede;
+	text-shadow: 0 -1px 1px #000;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size:18px;
+}
+
+#mc-embedded-subscribe-form select option{
+	background-color: #000;
+	font-size:10px;
+	line-height: 100%;
+	color:#dedede;
+}
+#mc-embedded-subscribe-form select:focus {
+background-color: #f00;
+}
+.wide_content form label{
+	display:block;
+	font-family: FranklinGothicBkCd, Arial, San-serif;
+	color: #656666;
+	font-size:20px;
+	padding-top:10px;
+}
+#mc_embed_signup form fieldset {
+margin-top:27px;
+}
+.wide_content form legend{
+	display:block;
+	font-family: FranklinGothicBkCd, Arial, San-serif;
+	color: #656666;
+	font-size:20px;
+	margin-top:20px;
+  font-weight:bold;
+}
+.mc-field-group.first{
+	width:310px;
+	padding-right: 40px;
+}
+.mc-field-group.last{
+	width:428px;
+}
+.full{
+	width: 777px;
+}
+
+
+/* HEADER */
+.loginGeneric, .loginWantMusic, .loginGotMusic{
+  /*height: 32px;
+  padding:5px 0;*/
+  width:1020px;
+  margin:0 auto;
+}
+
+.loginGeneric, .loginGeneric div.grid12-12{
+  background-color: #151515;
+}
+
+.loginWantMusic, .loginWantMusic div.grid12-12{
+  /*background-color: #d42f24; BLUE */
+  background-color: #0d64ad;
+}
+
+.loginGotMusic, .loginGotMusic div.grid12-12{
+  /*background-color: #0d64ad; RED */
+  background-color: #d42f24; 
+}
+
+.header-top-inner #block-user-0 .inner.clearfix{
+  display:block;
+  margin:0px;
+}
+
+div#block-block-6.block div.inner {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#block-block-6 *{
+  display:inline;
+}
+
+#block-block-6{
+  height:35px;
+}
+
+#block-block-6 ul {
+  /*padding-left:850px;*/
+  /*display:block;*/
+  /*margin-top:5px;*/
+  float:right;
+  margin-right: 17px;
+  margin-top: 4px;
+  margin-left: 0px;
+}
+
+#block-block-6 .admin {
+  background-color: green;
+  display:block;
+  height:27px;
+  padding: 5px;
+}
+
+#block-block-6  .wantmusic {
+  background-color:#0B5592;
+  display: block;
+  height: 27px;
+  padding: 5px;
+}
+
+#block-block-6  .gotmusic {
+  background-color: #CD2D22;
+  display: block;
+  height: 27px;
+  padding: 5px;
+}
+
+/* LOGIN BUTTON IN THE HEADER 
+.login-form-custom input{
+  float:none;
+}*/
+
+#user-login-form  input.form-submit{
+  width: 60px;
+  height: 29px;
+  padding: 0;
+  margin: 6px 0 0 3px; /* this centered the button in the block */ /* WELL THATS NOT RIGHT */
+  cursor:pointer;
+  border-style:none;
+  border:none;
+  font-size: 0; /* this makes the default text not show up */ 
+  background: transparent url(/sites/all/themes/md_fusion/images/btn-login.png) no-repeat 0 0;
+  
+  display:inline;
+  
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  
+  border:0px solid !important;
+  
+  border-radius:0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  float:none !important;
+  
+}
+
+#header-bottom{
+  background: url(/sites/all/themes/md_fusion/images/bg-headerBottom.png) repeat-x;
+  height:41px;
+  width:1020px;
+}
+
+.forgotpass{
+  font-size: 10px;
+}
+
+#preface-top-wrapper .inner{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+#block-user-0 *{
+  display:inline;
+}
+
+
+
+
+#logo img{
+  vertical-align: bottom;
+}
+
+
+.login-form-custom{
+  float: right;
+  /*padding-right: 35px;*/
+}
+
+.login-form-custom a{
+  color:#fff;
+  
+}
+
+#user-login-form input{
+  border: 2px solid #656666;
+  width: 100px;
+  height:12px;
+}
+
+#header-group-inner{
+  background: url('../images/bg-header.png') repeat-x;
+  position:relative;
+  height:85px;
+}
+
+
+div.header-group-wrapper  div.block-nice_menus {
+  position:  absolute;
+  margin-bottom: 0px;
+  width:auto;
+  float:right;
+  bottom: 0px;
+  right: 0px;
+  background: none;
+  overflow: visible;
+}
+
+div.header-group-wrapper div.block-nice_menus div.content > ul li{
+  width: auto;
+  float:left;
+  list-style-type:none;
+  list-style-image: none;
+  font-size: 14px;
+  font-weight: bold;
+  color:#656666;
+}
+
+div.header-group-wrapper  div.block-nice_menus div.content ul li a{
+  display:block;
+  color:#656666;
+  font-family: FranklinGothicBkXCp;
+  font-size:28px;
+  /*margin-top: 10px;*/
+  font-weight: normal;
+  height:31px;
+  line-height:34px;
+}
+  div.iblock-menu-menu-want-music-header div.content ul li a{
+  display:block;
+  color:#656666;
+  font-family: FranklinGothicBkXCp;
+  font-size:28px;
+  margin-top: 10px;
+  font-weight: normal;
+}
+#block-menu-menu-want-music-header ul li {
+display:inline;
+}
+div.header-group-wrapper div.block-nice_menus div.content >  ul li a:hover
+, div.header-group-wrapper div.block-nice_menus div.content ul li:hover
+{
+  text-decoration:none;
+  color: #fff;
+  background-color:#656666 ;
+}
+
+div.block-menu-menu-want-music-header div.content >  ul li a:hover
+,  div.block-menu-menu-want-music-header div.content ul li:hover
+{
+  text-decoration:none;
+  color: #fff;
+  background-color:#656666 ;
+}
+/* customized nice-menus */
+
+div.header-group-wrapper div.block-nice_menus ul li:hover
+{
+  text-shadow: 0.1em 0.1em 0.2em black;  
+  color: #fff; 
+  
+}
+
+ul.nice-menu-down li ,
+ul.nice-menu li,
+ul.nice-menu-down li.menuparent, 
+#header-region ul.nice-menu-down li.menuparent {
+  background: none;
+  border:none;
+}
+
+ul.nice-menu a {
+  padding: 0; 
+}
+
+ul.nice-menu-down li.menuparent:hover,
+div.header-group-wrapper ul.nice-menu li.menuparent ul 
+{
+  background: rgb(21,21,21);
+  background: rgba(21, 21, 21, 0.8);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+  width: 100%;
+  text-decoration:none;
+}
+
+ul.nice-menu-down li a ,
+ul.nice-menu-down .menuparent a
+{
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+ul#nice-menu-3.nice-menu li.menuparent ul li a,
+ul#nice-menu-9.nice-menu li.menuparent ul li a,
+ul#nice-menu-10.nice-menu li.menuparent ul li a
+{
+  font-size: 24px;
+  color: #dededd;
+  
+}
+
+ul.nice-menu ul, 
+#header-region ul.nice-menu ul{
+  top:31px;
+  border-top:none;
+}
+
+
+#block-nice_menus-3 ul li ul li:hover,
+#block-nice_menus-9 ul li ul li:hover,
+#block-nice_menus-10 ul li ul li:hover
+{
+  width:100%;
+}
+
+#block-nice_menus-3 ul li ul li:hover,
+#block-nice_menus-3 ul li ul li a:hover,
+#block-nice_menus-9 ul li ul li:hover,
+#block-nice_menus-9 ul li ul li a:hover,
+#block-nice_menus-10 ul li ul li:hover,
+#block-nice_menus-10 ul li ul li a:hover
+{
+  background-color:#d42f24 ;
+}
+
+
+
+
+/* TODO: replace it by skinr >> */
+
+#block-block-4 {
+  padding-left:50px;  
+  margin-top: 21px;
+  width:470px;
+}
+
+.grid12-3{
+	width: 265px; 
+}
+
+#block-block-4 ul li{
+  display: inline;
+}
+
+.login-form-custom img{
+  vertical-align: middle;
+}
+.login-form-custom .rss{
+  padding-left:20px;
+}
+.login-form-custom li.contact a{
+  margin-right:22px;
+}
+.contactContainer div {
+	width:234px;
+	height: 149px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #dedede;
+	float:left;
+	margin-bottom:10px;
+	padding: 28px 36px;
+}
+
+.contactContainer h2 {
+	margin-bottom: 30px;
+	
+}
+.contactContainer h3 {
+	margin-top:5px;
+	color: #acacac;
+	font-weight: normal;
+}
+.contactContainer div.first{
+	margin-right:10px;
+}
+ul.contact{
+	list-style-type:none;
+}
+ul.contact li{
+	font-size: 30px;
+	vertical-align: top;
+	color: #656666;
+	font-family: arial, sans-serif;
+}	
+ul.contact li.phone{
+	list-style-image: url("../images/icoPhone.gif");
+}
+ul.contact li.email{
+	list-style-image: url("../images/icoEmail.gif");
+	padding-top: 13px;
+	height: 28px;
+	padding-bottom: 17px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+ul.contact li.im{
+	list-style-image: url("../images/icoIM.gif");
+}
+
+
+#block-gotmusic .inner
+,#block-wantmusic .inner
+{
+  margin:0;
+}
+#block-gotmusic {
+   width:500px; 
+}
+
+#block-wantmusic {
+  width:520px;
+}
+
+#block-block-2{
+  color: #656666;
+  width: 470px;
+  font-weight:normal;
+  background: url('../images/bg-mission.jpg') no-repeat 63px 0 ;
+  padding-top: 60px;
+  padding-left: 30px;
+}
+#block-block-2 p:first-child{
+  text-shadow: 0.1em 0.1em 0.2em black;
+  
+}
+
+#block-block-2 .email
+,#block-block-2 .phone{
+  font-size: 16px;
+  font-weight: bold;
+}
+#block-block-2 .phone{
+  color: #acacac;
+}  
+
+#block-block-2 .email{
+  color: #d42f24;
+}
+
+
+
+/* << replace it by skinr */
+
+/* FOOTER */
+
+#postscript-bottom-inner{
+  background-color: #151515;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 40px;
+  border-top: 2px solid #656666;
+  display:block;
+}
+
+#postscript-bottom-inner li{
+  list-style-type: none;
+  list-style-image: none;
+}
+
+
+#postscript-bottom-inner a{
+  color: #666666;
+}
+
+
+
+
+.shortcuts{
+	padding-left:30px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.shortcuts a{ 
+	font-family: arial, Arial, sans-serif;
+	font-size:16px;
+	color: #656666;
+	float:left;
+
+}
+.shortcuts span{ 
+	font-weight: bold;
+}
+.shortcuts .grid12-4 div{
+	margin-left:15px;
+}
+.shortcuts p{
+	height: 94px;
+	margin-bottom: 0;
+	padding-right: 50px;
+	margin-top: 18px;
+}	
+
+
+#block-menu-menu-shortcuts2{
+  float: right;
+  padding-right: 45px;
+  width: 245px;
+}
+
+#block-menu-menu-shortcuts2 ul {
+  margin-left:0;
+}
+
+
+#footer-inner div{
+ background-color: #151515;
+ color:#656666;
+
+}
+
+
+#block-block-3 {
+  padding-left: 30px;
+}
+
+#block-menu-menu-shortcuts1.fusion-right {
+  float:left;
+}
+#block-menu-menu-shortcuts1 {
+  width: 180px;
+  padding-left: 50px;
+}
+
+#block-menu-menu-shortcuts1 div.inner{
+  margin-right:0;
+}
+
+#block-menu-menu-shortcuts1 ul li ul {
+  margin-left: 1em;
+}
+
+/* CONTENTS */
+
+
+
+.wide_content .pane-content{
+	float:left;
+	width:567px;
+	padding-left:35px;
+}
+.wide_content .pane-right{
+  float: left;
+  padding: 30px;
+  width: 350px;
+  /*
+	float: left;
+	width: 350px;
+	padding: 40px 26px 0px 34px;
+	*/
+}
+
+.pane-right a {
+	/*margin-left:80px;*/
+	margin-left:-3px;
+	margin-top:10px !important;
+}
+
+.wide_content .tickers{
+	background:url("/sites/all/themes/md_fusion/images/bg_tickers.png") no-repeat;
+	background-position: bottom;
+	width: 1020px;
+	height: 70px;	
+	clear: left;
+	border-top: 1px solid #dededd;
+}
+
+
+.tickers span{
+	/*margin-top:20px;*/
+	display:block;
+	float:left;
+	text-align:center;
+	width:310px;
+}
+
+/*
+.tickers span h2, .tickers span h3{
+  padding:0px;
+  line-height: 30px !important;  
+}
+*/
+
+#not_found{
+	padding:70px 65px 30px 75px;
+	color: #acacac;
+	line-height:1;
+	background: url('/sites/all/themes/md_fusion/images/bg-404.jpg') no-repeat;
+	background-position:550px bottom ;
+	
+}
+
+#not_found .links {
+	padding-top: 80px;
+}
+#not_found a,#not_found a:visited,#not_found a:hover{
+	font-weight: bold;
+	color: #acacac;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#not_found p{
+	font-family: Arial, sans-serif;
+	font-size:22px;
+}
+
+/*
+.grid12-9   .content-content{
+	padding: 0 30px 0 90px ;
+}
+*/
+
+.grid12-9   .content-content{
+	/*padding: 0 30px 0 90px ;*/
+	padding:0px;
+}
+
+
+.postscript-bottom-wrapper .grid12-9   .content-content
+{
+	padding: 0  ;
+}
+
+.full-node {
+	padding: 0 0 0 0 ;
+}
+
+#block-menu-menu-learnmore,
+#block-menu-menu-our-services{
+  padding-top: 70px;
+}
+#sidebar-first{
+  /*border-right: 1px solid #dededd */
+}
+
+#sidebar-first li.menu-path-node-16{
+  border-bottom: 1px solid #dededd	
+}
+	
+#sidebar-first h2{
+  font-family: Arial,Sans-serif ;
+  color:#acacac;
+  font-weight: normal;
+  padding-bottom:24px;
+  font-size:22px;
+}
+#sidebar-first ul.menu{
+	margin-left:0;
+	
+}
+
+#main-group {
+	font-family: Arial, sans-serif;
+	font-weight:normal;
+	color:#656666;
+	font-size: 16px;
+}
+
+#ajaxpage #node-form{
+  width:auto !important;
+  margin:0px !important;
+  overflow:visible;
+}
+
+#ajaxpage form fieldset{
+  margin-top:10px;
+  margin-bottom:20px !important;
+  padding-bottom:20px !important;
+  float:left;
+  clear:both;
+  display:block;
+}
+
+#field-artist-buzz-items{
+  clear:both;
+  display:block;
+  float:left;
+  margin: 20px 0;  
+}
+
+/*
+div.child-of-field_rep_short_bio {
+  border:1px solid #dedede !important;
+}
+*/
+
+#edit-field-song-review-status-value-wrapper{
+  clear:both;
+}
+
+.form-radio, #ajaxpage .form-checkbox, label.option input.form-checkboxes, #edit-checkout-wrapper label.option #edit-checkout{
+  margin-left:0px;
+}
+
+.marker, .form-required{
+  color: #CD2D22 !important;
+}
+
+fieldset.collapsible{
+  margin-top:20px !important;
+}
+
+fieldset table tr td, fieldset table tr, fieldset table tr th{
+  background-color:transparent !important;
+  border:0px !important;
+}
+
+fieldset.collapsed legend a{
+  padding-left:20px !important;
+}
+
+fieldset legend{
+  /*margin: 20px 0 10px !important;*/
+  display: block !important;
+}
+
+fieldset legend, fieldset legend a{
+  /*background:none !important;*/
+  /*margin:0px !important;*/
+  padding:0px !important; 
+  text-decoration:none;
+}
+
+fieldset legend a:hover{
+  text-decoration:none;  
+}
+
+/*
+.node_template_content h2{
+  color:#CD2D22;
+}
+*/
+
+
+
+
+fieldset ul.tips{
+  clear:both;
+}
+
+fieldset div.description{
+  clear:both;
+}
+
+#sidebar-first div.inner{
+	margin:0;
+}
+.grid12-9{
+	width:755px;
+}
+
+.node_template_content{
+  padding:0px !important;
+  width:auto !important;
+}
+
+.block-nice-menu ul {
+  margin-left: 2em;
+  padding: 0;
+}
+.nice-menu li {
+  padding: 0;
+  margin: 0;
+}
+#sidebar-first div.inner h2{
+	padding:57px 0 23px 34px
+}
+
+#sidebar-first ul.nice-menu li.active-trail a.active {
+	color:#d93429;
+}
+
+.block .content {
+  margin: 0 !important;
+}
+
+/****************************************************************************************** 
+ * LEFT NAV (CONTENT TABS,LEFT PANE, SIDEBAR)
+ * SIDEBAR IS THE NEW MD FUSION LEFT NAV FOR ANNONYMOUS PAGES
+ * CONTENT TABS ARE TABS CREATED BY DRUPAL WE STYLE THEM LIKE SIDEBAR ON CERTAIN PAGES
+ * PANELS ARE FOR LOGGED IN PAGES THAT USE THE OLD MENU
+ *  
+ */
+
+ /*
+  * OTHER PAGE BODY CLASSES TO ADD
+  * - body.page-node.node-type-vid
+  * - 
+  * -
+  * -
+  * 
+  */
+
+
+#block-menu-menu-artist-sidebar-menu h2,
+#block-menu-menu-artist-profile-sidebar-menu h2{
+  /*display:none;*/
+ text-indent: -9999px;
+}
+
+/* REMOVE 1st li BORDER-TOP ON CONTENT TABS*/
+/* body.* div#content-tabs-inner li:first-of-type{ border-top:0px; !important; } */
+
+/* CONTENT TABS FOR NODE EDIT PAGE (FIXED POSITION) 
+body.page-node #content-tabs{
+  background-color:#333;
+  bottom:0;
+  left:0;
+  margin:0px;
+  padding:10px;
+  position:fixed;
+  width:30%;
+  z-index: 100;
+}
+*/
+
+/* SETUP SIDEBAR WRAPPER */
+#sidebar-first .block .content {
+  margin: 0;
+}
+
+/* SETUP CONTENT TABS WRAPPER */
+/*body.node-type-playlist #content-tabs,
+body#pid-user-login #content-tabs,*/
+body.page-user #content-tabs,
+body.page-node.node-type-song #content-tabs,
+body.node-type-playlist div#playlist_top
+{
+  float: left !important;
+  width: 265px !important;
+  margin: 0px !important;
+  overflow: visible;
+  min-height: 515px;
+}
+
+body.node-type-playlist #playlist-wrapper,
+body.playlist #playlist-wrapper
+{
+  float:left;
+  padding:30px;
+  width:694px;
+  border-left:1px solid #dcdcdc;
+}
+
+/*body.node-type-playlist div#content-tabs-inner,
+body#pid-user-login div#content-tabs-inner,*/
+body.page-node.node-type-song div#content-tabs-inner,
+body.page-user div#content-tabs-inner,
+body.node-type-playlist div#playlist_top,
+.panel-col-first,
+#block-menu-menu-artist-sidebar-menu,
+#block-menu-menu-artist-profile-sidebar-menu
+{
+  padding:0px !important;
+  margin:0px !important;
+  width:265px !important;
+  overflow:visible;
+}
+
+div#left_column div#subnav ul,
+#sidebar-first ul.nice-menu,
+.panel-col-first .item-list ul,
+#block-menu-menu-artist-sidebar-menu ul,
+#block-menu-menu-artist-profile-sidebar-menu ul
+{
+  margin:0px !important;
+  width:265px;
+  border:0px !important;
+  overflow:visible;
+}
+
+#block-menu-menu-artist-sidebar-menu ul{
+  margin-top:114px;
+}
+
+#sidebar-first .block-nice_menus{
+  overflow:visible;
+}
+
+/*body.node-type-playlist div#content-tabs-inner.content-tabs-inner li,
+body#pid-user-login div#content-tabs-inner.content-tabs-inner li,*/
+body.page-node.node-type-song div#content-tabs-inner.content-tabs-inner li,
+body.page-user div#content-tabs-inner.content-tabs-inner li,
+div#left_column div#subnav ul li,
+body.node-type-playlist ul.user_function_buttons li,
+#sidebar-first ul.nice-menu li,
+.panel-col-first .item-list ul li,
+#block-menu-menu-artist-sidebar-menu ul li,
+#block-menu-menu-artist-profile-sidebar-menu ul li
+{
+	list-style-image:none;
+	list-style-type:none;
+	font-family: FranklinGothicBkXCp,Arial,Sans-serif ;
+	font-size:28px;
+	height:85px;
+	width:265px;
+	font-weight: normal;
+	border-top: 1px solid #dededd ;
+	vertical-align: middle;
+	/*position: relative;*/
+	text-transform: uppercase;
+	overflow:visible;
+	padding:0px !important;
+	background:none !important;
+	display:block;
+	margin:0px;
+}
+
+div#left_column div#subnav ul li a.popup-whats-this{
+  display:block;
+  float:left;
+  font-size:15px;
+  position:relative;
+  font-weight:normal;
+  z-index:8; 
+  width:16px;
+  height:16px;
+  line-height: 15px;
+  margin-top: -50px;
+  margin-left: 10px;
+  
+}
+
+/*body.node-type-playlist div#content-tabs-inner.content-tabs-inner li a,
+body#pid-user-login div#content-tabs-inner.content-tabs-inner li a,*/
+body.page-node.node-type-song div#content-tabs-inner.content-tabs-inner li a,
+body.page-user div#content-tabs-inner.content-tabs-inner li a,
+div#left_column div#subnav ul li a.artistpage,
+body.node-type-playlist ul.user_function_buttons li a,
+#sidebar-first ul.nice-menu li a,
+.panel-col-first .item-list ul li a,
+a#mb_additional_link_bio,
+#block-menu-menu-artist-sidebar-menu ul li a,
+#block-menu-menu-artist-profile-sidebar-menu ul li a
+{
+	color: #646464 !important;
+  height: 85px !important;
+  line-height: 85px !important;
+  padding: 0 0 0 35px !important;
+  /*position: absolute;*/
+  text-decoration: none;
+  width: 230px;
+  display: block !important;
+  margin:0px;
+  overflow:hidden;
+}
+
+div#left_column div#subnav ul li a img,
+body.node-type-playlist ul.user_function_buttons li a img,
+#sidebar-first ul.nice-menu li a img,
+.panel-col-first .item-list ul li a img
+{
+  display:none;
+}
+
+/*body.node-type-playlist div#content-tabs-inner.content-tabs-inner li.active a,
+body.node-type-playlist div#content-tabs-inner.content-tabs-inner li.active a:hover,
+body#pid-user-login div#content-tabs-inner.content-tabs-inner li.active a,
+body#pid-user-login div#content-tabs-inner.content-tabs-inner li.active a:hover,*/
+body.page-node.node-type-song div#content-tabs-inner.content-tabs-inner li.active a,
+body.page-node.node-type-song div#content-tabs-inner.content-tabs-inner li.active a:hover,
+body.page-user div#content-tabs-inner.content-tabs-inner li.active a,
+body.page-user div#content-tabs-inner.content-tabs-inner li.active a:hover,
+div#left_column div#subnav ul li a.active,
+div#left_column div#subnav ul li a.active:hover,
+body.node-type-playlist ul.user_function_buttons li a.active,
+body.node-type-playlist ul.user_function_buttons li a.active:hover,
+#sidebar-first ul.nice-menu li a.active, 
+#sidebar-first ul.nice-menu li a.active:hover,
+.panel-col-first .item-list ul li a.active,
+.panel-col-first .item-list ul li a.active:hover,
+#block-menu-menu-artist-sidebar-menu ul li a.active,
+#block-menu-menu-artist-sidebar-menu ul li a.active:hover,
+#block-menu-menu-artist-profile-sidebar-menu ul li a.active,
+#block-menu-menu-artist-profile-sidebar-menu ul li a.active:hover
+{
+  color:#CD2D22 !important;
+  background:#fff;  
+  position:relative;
+  width:232px;
+  z-index:7;
+  text-decoration:none;
+  font-weight:normal;
+}
+
+/*body.node-type-playlist div#content-tabs-inner.content-tabs-inner li a:hover,
+body#pid-user-login div#content-tabs-inner.content-tabs-inner li a:hover,*/
+body.page-node.node-type-song div#content-tabs-inner.content-tabs-inner li a:hover,
+body.page-user div#content-tabs-inner.content-tabs-inner li a:hover,
+div#left_column div#subnav ul li a:hover,
+body.node-type-playlist ul.user_function_buttons li a:hover,
+#sidebar-first ul.nice-menu li a:hover,
+.panel-col-first .item-list ul li a:hover,
+#block-menu-menu-artist-sidebar-menu ul li a:hover,
+#block-menu-menu-artist-profile-sidebar-menu ul li a:hover
+{
+  color:#000 !important;
+  background:#f5f5f5;
+  text-decoration:none;
+}
+
+/* END LEFT NAV */
+
+
+.ajaxpage_artistpage{
+  background: url('/sites/all/themes/md_fusion/images/bg-artistProfile.png') repeat-x;
+}
+
+#content-inner-inner{
+  margin:0px;
+  padding:0px;
+}
+
+
+/* ADD BORDER LEFT */
+.panel-mdfixed2col .panel-col-last,
+div#content-inner,
+#right_column
+{
+  border-left:1px solid #dedede;
+}
+
+
+
+
+
+
+/****************************************************************************************** 
+ * PAGES 2-COLUMN LAYOUT
+ * HANDLES LEFT COLUMN (265px)
+ * HANDLES RIGHT COLUMN (754px or 694px with 30px padding) 
+ */
+
+/* NODE EDIT FORM PAGES (STAFF AND INTERNAL) 
+body.page-node form.node-form{
+  margin:0px;
+  padding:0px;
+}
+
+body.page-node form div.item-list{
+  width:265px;
+  float:left;
+  margin:0px;
+  padding:0px;
+}
+
+body.page-node form div.item-list ul{
+  margin:0px;
+  padding:0px;
+  width:265px;
+}
+
+#node-form fieldset, #node-form .form-item{
+  margin:0px;
+  padding:0px;
+}
+
+#node-form fieldset{
+  display:block;
+  float:right;
+  width:700px;
+}
+*/
+
+/* AJAXPAGE DON'T PUT PADDING   */
+/* AJAXPAGE WIDTH 1020          */
+#ajaxpage{
+  width: 1020px;
+  /*width: 980px;*/
+  padding:0px !important;
+  margin:0px !important;
+  background:#fff;
+}
+
+#ajaxpage #ajaxpage_content{
+  padding:0px;
+  width:auto;
+  background: none;  
+}
+
+#ajaxpage form{
+  padding:0px;
+  margin: 0px;
+  background-color:transparent;
+}
+
+#left_column {
+    float: left;
+    width: 265px;
+    background:none !important;
+}
+
+#right_column,
+.panel-mdfixed2col .panel-col-last
+{
+    float: left;
+    margin-bottom: 0px;
+    /*width: 753px;*/
+    /*width: 694px;*/
+    width: 613px;
+    padding: 30px 70px;
+}
+
+a#myhome_link{
+  display:none !important;
+}
+
+.panel-col-first{
+  background:none;
+}
+
+
+.panel-mdfixed2col{
+  /*padding:20px !important;*/
+  padding:0px !important;
+}
+
+.panel-mdfixed2col .panel-col-last .main{
+  width:auto !important;
+  /*padding:30px;*/
+  background:transparent;
+}
+
+.panel-mdfixed2col .panel-col-first{
+  margin-right:0px !important;
+  width:265px;
+}
+
+.panel-mdfixed2col .panel-col-first .inside{
+  margin:0px !important;
+}
+
+.panel-mdfixed2col .panel-col-last .inside{
+  margin:0px;
+}
+
+.panel-mdfixed2col .panel-col-last .top{
+  background:transparent;
+}
+
+
+.panel-mdfixed2col .panel-col-last .bottom{
+  background:transparent;
+}
+
+
+/* MULTISTEP FORM LIST STYLES */
+div.dashboard-multistep-form-nav{
+  background-color:#ccc;
+  display:block;
+  border-bottom:1px solid #ccc;
+}
+
+ul.dashboard-multistep-form-nav-list{
+  list-style:none;
+  margin:0px;
+  padding:0px;
+}
+
+ul.dashboard-multistep-form-nav-list li{
+  float:left;
+  display:block;
+  padding:0px;
+  margin:0px;
+}
+
+ul.dashboard-multistep-form-nav-list li a,
+ul.dashboard-multistep-form-nav-list li a#multistep-complete:hover,
+span#multistep-complete {
+  background-color: #ddd;
+  /*border: 0 solid #fff;*/
+  font-size: 14px;
+  height: 35px;
+  line-height: 38px;
+  padding-left: 30px;
+  padding-right: 8px;
+  position: relative;
+  display:block;
+  border-top:1px solid #bbb;
+}
+
+ul.dashboard-multistep-form-nav-list li a#multistep-complete,
+ul.dashboard-multistep-form-nav-list li a#multistep-complete:hover{
+  cusor:default;
+}
+
+ul.dashboard-multistep-form-nav-list li a:hover{
+  background-color:#f5f5f5;
+  text-decoration:none;
+}
+
+ul.dashboard-multistep-form-nav-list li a:hover:after{
+  border-left-color:#f5f5f5;
+}
+
+ul.dashboard-multistep-form-nav-list li a.active,
+ul.dashboard-multistep-form-nav-list li a.active.errorstep{
+  background-color:#1866A8;
+  color:#fff;
+  text-decoration:none
+}
+
+ul.dashboard-multistep-form-nav-list li a.errorstep{
+  background-color:#C52020;
+  color:#fff;
+  text-decoration:none
+}
+
+ul.dashboard-multistep-form-nav-list li a.active:after,
+ul.dashboard-multistep-form-nav-list li a.active.errorstep:after{
+  border-left-color:#1866A8;
+}
+
+ul.dashboard-multistep-form-nav-list li a.errorstep:after{
+  border-left-color:#C52020;
+}
+
+ul.dashboard-multistep-form-nav-list li a:after,
+ul.dashboard-multistep-form-nav-list li a:before,
+ul.dashboard-multistep-form-nav-list li a#multistep-complete:after,
+ul.dashboard-multistep-form-nav-list li a#multistep-complete:before{
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  left: 100%;
+  position: absolute;
+  width: 0;
+}
+
+ul.dashboard-multistep-form-nav-list li a:after,
+ul.dashboard-multistep-form-nav-list li a#multistep-complete:after {
+  border-width: 17px;
+  border-left-color: #ddd;
+  top: 1px;
+}
+
+ul.dashboard-multistep-form-nav-list li a:before,
+ul.dashboard-multistep-form-nav-list li a#multistep-complete:before {
+  border-width: 18px;
+  border-left-color: #bbb;
+  top: 0px;
+}
+
+/* CONTENT TABS 2-COLUMN LAYOUT */
+/*body.node-type-playlist #content-inner,*/
+body.page-node.node-type-song #content-inner,
+body.page-user #content-inner
+{
+  float:right;
+  display:block;
+  margin:0 auto;
+  width:753px;
+  min-height:515px;
+}
+
+
+
+body.page-node.node-type-song #content-inner
+{
+  padding:30px;
+  width:693px;
+}
+
+#node-form fieldset, #node-form .form-item{
+  padding:0px;
+}
+
+div.form-checkboxes table{
+  /*width:660px !important;*/
+ width:940px !important;
+}
+
+#node-form .form-radio{
+  margin:0 10px 0 0px;
+  padding:0px;
+}
+
+#node-form #edit-field-song-description-0-value-wrapper{
+  clear:both;
+  width:100%;
+}
+
+#node-form .content-multiple-table tr.draggable .form-item{
+  /*width:250px;*/
+  width:297px;
+  margin:0 30px 0 0;
+  padding:0px;
+  border:0px;
+}
+
+.form-item{
+  overflow:visible;
+}
+
+.form-item label.option{
+  float: left;
+  font-weight: normal;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size:12px;
+  margin-bottom:2px;
+}
+
+#node-form fieldset .form-item{
+  border:0px;
+  background-color:transparent;
+}
+
+#node-form fieldset{
+  /*border:1px solid #ccc;*/
+  /*width:100%;*/ 
+  float:left;
+  width:685px;
+  border:0px;
+  background-color:transparent;
+  margin-top:30px;
+}
+
+#node-form fieldset .form-item{
+  border:0px; 
+  margin-bottom:20px;
+  margin-right:30px;
+}
+
+#node-form fieldset, #node-form .form-item{
+  
+}
+
+#mb_tax_table tr td{
+  border-left:1px solid #ddd;
+}
+
+/* SPECIFICALLY FOR NODE EDIT */
+#edit-field-song-update-round2-value-wrapper{
+  clear:both;
+}
+
+/* SPECIFICALLY FOR NODE EDIT */
+#field_song_soundslike_values{
+  clear:both;
+}
+
+table#mb_tax_table td div{
+  clear:both;
+}
+
+body.page-node.node-type-song #node-form .form-item label.option{
+  padding:0px;
+  margin:0px;
+}
+
+div.item-list ul{
+  /*margin:20px;*/
+}
+
+
+
+/*
+ *  NEW STYLES FOR THE OLD DISCOVERY TOOL
+ * 
+ */
+.view-mb-playlist-my-playlists{
+  border-top:1px solid #dcdcdc;
+  padding-top:18px;
+}
+
+.view-mb-playlist-my-playlists .item-list ul{
+  margin-left:34px;
+}
+
+.view-public-songs{
+  /*padding:10px;*/
+}
+
+.view-public-songs .inner.content {
+  margin:0px !important;
+}
+
+.view-public-songs .view-filters{
+  background:none;
+  border:0px;
+  border-radius:0px;
+  margin-bottom:10px;
+  padding:0px;
+}
+
+.dtool{
+  /*border-top:1px solid #ccc !important;*/
+}
+
+.dtool .second{
+  width:444px !important;
+}
+.dtool .first{
+  border-left:0px !important;
+  width:162 !important;
+}
+
+.dtool-go{
+  width:163px !important;
+  border-left:1px solid #ccc !important;
+  background:none !important;
+  background-color: #eee !important;
+  border-top:1px solid #ccc !important;
+}
+
+.dtool-go input.form-submit{
+  border:0px !important;
+  height:100px !important;
+  margin:15px 0 0 !important;
+  padding: 0px !important;
+  width:160px !important;
+  
+}
+
+#dtool-left{
+  width:577px;
+}
+
+.dtool #edit-items-per-page{
+  height:22px;
+  padding:0px;
+  width:50px;
+}
+
+#discovery-tool-playlist-link{
+  padding:10px !important;
+}
+
+#block-mb_discovery_tool-0{
+  background:none;
+  border-left:0px;
+  border-right:0px;
+  border-bottom:0px;
+  border-top:1px solid #ccc;
+  margin: 34px 0 0;
+  padding:30px;
+  width:205px;
+  background:none;
+  border-radius:0px;
+}
+
+/* PLAYLIST PAGE OVERIDE STYLES */
+#playlist-wrapper object#musicplayer{
+  width:100%;
+}
+
+body.node-type-playlist ul.user_function_buttons, body.playlist ul.user_function_buttons{
+  top:auto;
+  right:auto;
+}
+
+/*
+body.node-type-playlist #content-tabs{
+  display:none;
+}
+*/
+
+body.node-type-playlist #playlist_top,
+body.playlist #playlist_top,
+body.page-user #playlist_top
+{
+  background:none;
+  margin:0px;
+  padding: 0px;  
+}
+
+body.node-type-playlist #artistInfoContainer,
+body.playlist #artistInfoContainer
+{
+  width:100% !important;
+}
+
+body.node-type-playlist #main-group h1.title{
+  border:0px;
+}
+
+body.page-want h2.pane-title{
+  display:none;
+}
+
+body.node-type-playlist #playlist_header, body.playlist #playlist_header{
+  background-color:transparent;
+  margin:0px;
+  padding:0px;
+  width:100%;
+}
+
+body.node-type-playlist #playlist_header ul, body.node-type-playlist #playlist_header p, body.playlist #playlist_header ul, body.playlist #playlist_header p{
+  color:#000;
+}
+
+body.node-type-playlist #playlist_header h2, body.playlist #playlist_header h2 {
+  color:#000;
+}
+
+body.node-type-playlist form#node-form{
+  background-color:transparent;
+}
+
+body.page-playlists .section-player{
+  float:none;
+  margin:25px auto 0;
+}
+
+body.page-playlists #custom-playlist-section{
+  margin:0 auto;
+  float:none;
+}
+
+body.node-type-playlist #content-content,
+body#pid-user-login #content-content,
+body.page-user #content-content
+{
+  /*padding:30px;*/
+}
+
+/* END PLAYLST STYLES */
+
+
+/* WANT PAGES STYLES */
+body.page-want form{
+  background-color:transparent !important;
+}
+
+
+/* Hidden Page H2's */
+
+/*
+body#pid-meet-the-team #content-content h2:first-of-type{
+  display:none !important;
+}
+*/
+
+/*
+#content-content h2:first-of-type{
+  display:none; 
+}
+body#pid-want-music{
+  
+}
+*/
+
+/* Other Styles */
+li.top-logout{
+  /*margin: 0 20px 0 -18px !important;*/
+  display:block;
+  float:left;
+  margin-left:10px !important;
+  padding-left:10px !important;
+  border-left:1px solid #fff;
+}
+li.top-logout.welcome-li{
+  border:0px !important;
+  color:#fff;
+  font-weight:bold;
+}
+
+li.top-logout a{
+  color:#fff;
+}
+
+div.node{
+  margin:0px;
+  padding:30px;
+}
+
+/* MEET THE TEAM STYLES */
+body#pid-meet-the-team div#main-group{
+  /*padding:30px;*/
+}
+
+div.view-public-team div.views-row div.node{
+  min-height:185px;
+}
+
+div.field-field-team-pic{
+  float:left;
+  margin:5px 25px 15px 0;
+}
+
+/* MESSAGE STYLES */
+div.content-messages-inner div.messages,
+div.content-messages-admin-inner div.messages,
+div.messages {
+  position: fixed;
+  display:block;
+  box-shadow:         0 4px 10px 4px #333333;
+  -moz-box-shadow:    0 4px 10px 4px #333333;
+  -webkit-box-shadow: 0 4px 10px 4px #333333;
+  border-radius:          10px;
+  -moz-border-radius:     10px;
+  -webkit-border-radius:  10px;
+  opacity:0.9;
+  /*left:%;*/
+  right:30%;
+  left:30%;
+  top:10%;
+  z-index:1000;
+  color:#fff;
+  padding:20px;
+  background: #222;
+  border: 3px solid #fff;
+  width:250px !important;
+  font-size: 12px !important;
+}
+
+div.content-messages-inner div.messages *,
+div.content-messages-admin-inner div.messages *,
+div.messages * {
+  color:#fff;
+  text-align: left !important;
+  font-size:12px !important;
+  
+}
+
+div.content-messages-inner div.status *,
+div.content-messages-admin-inner div.status *,
+div.status * {
+  color:#3e642f !important;
+}
+
+div.content-messages-inner div.status,
+div.content-messages-admin-inner div.status,
+div.status {
+  background-color: #EAF8E4;
+  border-color: #8DC478;
+  color: #3E642F !important;
+}
+
+div.content-messages-inner div.warning *,
+div.content-messages-admin-inner div.warning *,
+div.warning * {
+  color:#745500 !important;
+}
+
+div.content-messages-inner div.warning,
+div.content-messages-admin-inner div.warning,
+div.warning {
+  background: #FFFFDD;
+  border-color: #EED300;
+  color: #745500 !important;
+}
+
+div.content-messages-inner div.error *,
+div.content-messages-admin-inner div.error *,
+div.error * {
+  color: #B20000 !important;
+}
+div.content-messages-inner div.error,
+div.content-messages-admin-inner div.error,
+div.error {
+  background-color: #FFF2F2;
+  border-color: #CC0000;
+  color: #B20000 !important;
+}
+
+div.content-help-inner div.help *{
+  color:#292929;
+}
+
+.help,
+div.content-help-inner div.help {
+  background-color: #E4EEF8;
+  border-color: #57718A;
+  color: #292929;
+}
+
+
+/* 
+ * FORM STYLES
+ * WANT MUSIC FORM, REGISTER FORM, LOGIN FORM, FORGOT PASS
+ * AJAX PAGE FORMS
+ * 
+ */
+form#node-form{
+  padding:0px;
+  margin:30px;
+}
+
+form#md2-want-music-frm-form,
+form#user-register,
+form#user-login,
+form#user-login-1,
+form#user-pass
+{
+    display: block;
+    padding: 30px 0 30px 90px;
+    /*
+    display: block;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+    width: 900px;
+    */
+}
+
+.musicdealers-form-password{
+  clear:both;
+}
+
+#login_username_submit_image_button{
+    background: url("../images/buttons_sitewide.png") no-repeat scroll -8px -16px transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 48px;
+    margin-top: 35px;
+    text-indent: -9999px;
+    width: 176px;
+    clear:both;
+}
+
+.form-item .description{
+  clear:both;
+  width:297px;
+  margin-top:10px;
+}
+
+form#md2-want-music-frm-form .form-item {
+  width:300px;
+  float:left;
+}
+form#user-register .form-item {
+    float: left;
+    margin-right: 30px;
+    width: 400px;
+}
+
+#ajaxpage_content object{
+  width:614px;
+}
+
+#ajaxpage .form-item, #content-inner-inner .form-item,
+.panel-mdfixed2col .panel-col-last .form-item
+{
+  margin:20px 0px 20px 0;
+  width:297px;
+  float:left;
+}
+
+.form-item.musicdealers-form-checkboxes{
+  width:938px !important;
+}
+
+.form-item.musicdealers-form-checkboxes input{
+  float:left !important;
+  display:block;
+  margin-right:3px;
+}
+
+.form-item.musicdealers-form-checkbox{
+  width:auto !important;
+  float:left;
+  clear:both;
+}
+
+/*
+#mood-wrapper.form-item{
+  width:50px !important;
+}
+*/
+
+#node-form fieldset, #node-form .form-item{
+  border:0px;
+  background:0px;
+}
+
+#node-form #edit-preview-changes,
+#node-form #edit-submit
+{
+  float:left;
+  display:block;
+  clear:both;
+}
+
+
+
+#content-inner-inner .form-text,
+div#ajaxpage #node-form .form-text,
+div#ajaxpage .node-form .form-text,
+.panel-mdfixed2col .panel-col-last textarea,
+.panel-mdfixed2col .panel-col-last .form-text
+{
+  width:262px;
+  float:left;
+}
+
+/* INPUT ERROR */
+.form-item input.error, .form-item textarea.error{
+  border: 2px solid #C52020;
+  color: #363636;
+}
+
+/* REMOVE MARGINS ON FORM ITEMS INSIDE OF FORM ITEMS */
+.form-item .form-item{
+  margin:0px !important;
+  padding:0px !important;
+  
+}
+
+div#ajaxpage div.ajaxpage_wrap_label,
+.form-item label
+{
+  text-align:left;
+  margin-left:0px;
+  margin-right:0px;
+  mrgin-bottom:10px;
+  font-size:13px;
+}
+
+/* IN LINE ERROR MESSAGES FOR ARTIST PAGE URL, ETC... */
+div#ajaxpage form#node-form .messages{
+  float:left;
+  width:262px;
+  position:relative;
+}
+
+#register_register_form .description{
+  margin:10px 0 0 0 !important;
+}
+
+.panel-mdfixed2col .form-item .description{
+  width:273px;
+}
+
+form#md2-want-music-frm-form .musicdealers-form-textarea {
+  width:520px;
+}
+
+form#md2-want-music-frm-form .musicdealers-form-textarea textarea {
+  height:100px;
+}
+
+
+
+
+
+form#md2-want-music-frm-form input, form#md2-want-music-frm-form select, form#md2-want-music-frm-form textarea {
+  border:2px solid #ddd;
+}
+
+form#md2-want-music-frm-form input:focus, form#md2-want-music-frm-form select:focus, form#md2-want-music-frm-form textarea:focus{
+  border:2px solid #0D64AD;
+  outline:none;
+}
+
+.panel-mdfixed2col div.ajaxpage_rest_wrapper{
+  width:307px;
+}
+
+form#md2-want-music-frm-form select, .form-select{
+  
+  height:32px;
+  padding:6px;
+  outline:none;
+}
+
+#ajaxpage .form-submit{
+  float:left;
+  margin:20px 30px 0 0;
+}
+
+#ajaxpage .form-submit.ahah-processed{
+  margin:0px 30px 0 0;
+}
+
+#register_register_form fieldset legend{
+  display:none;
+}
+
+/* Input unfocused */
+input{
+  border:2px solid #ddd;
+}
+
+/* Input focus */
+input:focus{
+  border:2px solid #0D64AD;
+}
+
+/* Submit Button (Mailing List Subscription Form) */
+form#mailchimp-subscribe-auth-form #edit-submit{
+  clear:both;
+  display:block;
+  float:left;
+}
+
+/* Submit Button (want-music form)*/
+/*
+.btn,
+form#md2-want-music-frm-form input.form-submit,
+form#user-register #edit-submit,
+form input.form-submit
+{
+  cursor: pointer;
+  display: inline-block;
+  font-family:FranklinGothicBkCd;
+  padding: 0px 20px 0px;
+  text-shadow: 0 1px 1px #333;
+  color: white;
+  font-size: 17px;
+  line-height: normal;
+  font-weight:normal;
+  -webkit-border-radius:  15px;
+  -moz-border-radius:     15px;
+  border-radius:          15px;
+  box-shadow:         0 4px 4px -4px #000000;
+  -webkit-box-shadow: 0 4px 4px -4px #000000;
+  -moz-box-shadow:    0 4px 4px -4px #000000;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  -ms-transition: 0.1s linear all;
+  -o-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  height: 35px;
+  margin-top:20px;
+  letter-spacing:2px;
+  float:left;
+}
+*/
+
+/* WANT MUSIC FORM SUBMIT BUTTON COLOR */
+/*
+body#pid-got-music form#md2-want-music-frm-form input.form-submit,
+.btn-red
+{
+  border: 1px solid #DC103B !important;
+  background-color: #E6E6E6;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#E9554B), color-stop(25%, #CD2D22), to(#B83034));
+  background-image: -webkit-linear-gradient(#E9554B, #CD2D22 25%, #B83034);
+  background-image: -moz-linear-gradient(top, #E9554B, #CD2D22 25%, #B83034);
+  background-image: -ms-linear-gradient(#E9554B, #CD2D22 25%, #B83034);
+  background-image: -o-linear-gradient(#E9554B, #CD2D22 25%, #B83034);
+  background-image: linear-gradient(#E9554B, #CD2D22 25%, #B83034);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E9554B', endColorstr='#CD2D22', GradientType=0);
+}
+*/
+
+/* GOT MUSIC FORM SUBMIT BUTTON COLOR */
+/*
+body#pid-want-music form#user-register #edit-submit,
+.btn-blue,
+form#user-register #edit-submit,
+form input.form-submit
+{
+  border: 1px solid #1180DC;
+  background-color: #09477A;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2171B3), color-stop(25%, #0B518C), to(#09477A));
+  background-image: -webkit-linear-gradient(#2171B3, #0B518C 25%, #09477A);
+  background-image: -moz-linear-gradient(top, #2171B3, #0B518C 25%, #09477A);
+  background-image: -ms-linear-gradient(#2171B3, #0B518C 25%, #09477A);
+  background-image: -o-linear-gradient(#2171B3, #0B518C 25%, #09477A);
+  background-image: linear-gradient(#2171B3, #0B518C 25%, #09477A);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2171B3', endColorstr='#0B518C', GradientType=0);
+}
+*/
+
+/*body#pid-got-music form#user-register #edit-submit,*/
+/*
+.btn-blue {
+  margin: -58px 0px 0px 400px !important;
+  float:left; 
+}
+*/
+
+/**
+ * GOT MUSIC PAGE BUTTON
+ */
+form#user-register #edit-submit,
+a#got-music-button-link
+{
+    background: url("../images/buttons_sitewide.png") no-repeat scroll -198px -16px transparent;
+    border: medium none;
+    cursor: pointer;
+    height: 48px;
+    text-indent: -9999px;
+    width: 176px;
+    margin-top:35px;
+    display:block;
+    float:left;
+}
+
+form#user-register #edit-submit:hover,
+a#got-music-button-link:hover
+{
+    background: url("../images/buttons_sitewide.png") no-repeat scroll -198px -73px transparent;
+}
+
+/**
+ * WANT MUSIC BUTTON
+ */
+form#md2-want-music-frm-form .form-submit,
+a#want-music-button-link
+{
+    background: url("../images/buttons_sitewide.png") no-repeat scroll -8px -16px transparent;
+    border: medium none;
+    cursor: pointer;
+    height: 48px;
+    text-indent: -9999px;
+    width: 176px;
+    margin-top:35px;
+    display:block;
+    float:left;
+}
+
+form#md2-want-music-frm-form .form-submit{
+  margin-left:85px;
+  margin-top:55px;
+}
+
+form#md2-want-music-frm-form .form-submit:hover,
+a#want-music-button-link:hover
+{
+    background: url("../images/buttons_sitewide.png") no-repeat scroll -8px -73px transparent;
+}
+
+/**
+ * ADDITIONAL BUTTONS
+ */
+#edit-group-band-members-group-band-members-add-more,
+#edit-field-artist-buzz-field-artist-buzz-add-more,
+#edit-group-additional-band-contacts-group-additional-band-contacts-add-more,
+#edit-group-song-writer-group-song-writer-add-more,
+#edit-group-song-publisher-group-song-publisher-add-more
+{
+    background: url("../images/buttons_sitewide.png") no-repeat scroll -399px -214px transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 25px;
+    margin-top: 3px;
+    text-indent: -9999px;
+    width: 100px;
+}
+
+tr.odd .form-item, tr.even .form-item{
+   white-space: normal;
+}
+
+#edit-group-band-members-group-band-members-add-more:hover,
+#edit-field-artist-buzz-field-artist-buzz-add-more:hover,
+#edit-group-additional-band-contacts-group-additional-band-contacts-add-more:hover,
+#edit-group-song-writer-group-song-writer-add-more:hover,
+#edit-group-song-publisher-group-song-publisher-add-more:hover
+{
+    background: url("../images/buttons_sitewide.png") no-repeat scroll -399px -250px transparent;
+}
+
+
+/**
+ * ARTIST PROFILE NEXT BUTTON  
+ */
+#multistep-next
+{
+    background: url("../images/buttons_sitewide.png") no-repeat scroll -601px -16px transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 40px;
+    margin-top: 3px;
+    text-indent: -9999px;
+    width: 67px;
+    float:right;
+}
+
+#multistep-next:hover{
+    background: url("../images/buttons_sitewide.png") no-repeat scroll -601px -73px transparent;
+}
+
+/**
+ * ARTIST PROFILE PREVIOUS BUTTON
+ */
+#multistep-previous
+{
+    background: url("../images/buttons_sitewide.png") no-repeat scroll -523px -16px transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 40px;
+    margin-top: 3px;
+    text-indent: -9999px;
+    width: 67px;
+}
+
+#multistep-previous:hover{
+    background: url("../images/buttons_sitewide.png") no-repeat scroll -523px -73px transparent;
+}
+
+.login-form-custom #edit-submit{
+  display:inline !important;
+}
+
+/**
+ * SUBMIT BUTTON
+ */
+.dashboard-form-wrapper #edit-submit,
+#edit-submit
+{
+    background: url("../images/buttons_sitewide.png") no-repeat scroll -757px -16px transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    margin-top: 3px;
+    text-indent: -9999px;
+    width: 67px;
+    float:right;
+}
+
+/* ARTIST PROFILE SUBMIT ONLY */
+.dashboard-form-wrapper #edit-submit{
+  float:right !important;
+  display:block;
+  clear:none !important;
+}
+
+/* ARTIST PROFILE GENRE BOXES */
+.child-of-field_artist_main_genre_check .form-item.musicdealers-form-checkbox {
+  clear:none !important;
+  float:left !important;
+  width:165px !important;
+}
+
+.dashboard-form-wrapper #edit-submit:hover,
+#edit-submit:hover{
+    background: url("../images/buttons_sitewide.png") no-repeat scroll -757px -73px transparent;
+}
+
+/**
+ * APPLY CHANGES
+ */
+#edit-preview-changes{
+    background: url("../images/buttons_sitewide.png") no-repeat scroll -399px -132px transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    /*float: right;*/
+    height: 25px;
+    margin-top: 3px;
+    text-indent: -9999px;
+    width: 91px;
+}
+
+#edit-preview-changes:hover{
+  background: url("../images/buttons_sitewide.png") no-repeat scroll -399px -168px transparent;
+    
+}
+
+
+
+/**
+ * FILE UPLOAD BUTTON
+ */
+#edit-field-artist-profilepic-0-filefield-upload,
+#edit-field-artist-upload-w9-0-filefield-upload,
+#edit-field-artist-upload-w8-0-filefield-upload,
+#edit-field-song-mp3-0-filefield-upload
+{
+  background: url("../images/buttons_sitewide.png") no-repeat scroll -523px -132px transparent;
+  border: medium none;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 25px;
+  margin-top: 3px;
+  text-indent: -9999px;
+  width: 67px;
+}
+
+#edit-field-artist-profilepic-0-filefield-upload:hover,
+#edit-field-artist-upload-w9-0-filefield-upload:hover,
+#edit-field-artist-upload-w8-0-filefield-upload:hover,
+#edit-field-song-mp3-0-filefield-upload:hover
+{
+  background: url("../images/buttons_sitewide.png") no-repeat scroll -523px -168px transparent;
+}
+
+
+/**
+ * FILE REMOVE BUTTON
+ */
+#edit-field-artist-profilepic-0-filefield-remove,
+#edit-field-artist-upload-w9-0-filefield-remove,
+#edit-field-artist-upload-w8-0-filefield-remove,
+#edit-field-song-mp3-0-filefield-remove
+{
+  background: url("../images/buttons_sitewide.png") no-repeat scroll -626px -214px transparent;
+  border: medium none;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 25px;
+  margin-top: 3px;
+  text-indent: -9999px;
+  width: 67px;
+}
+
+#edit-field-artist-profilepic-0-filefield-remove:hover,
+#edit-field-artist-upload-w9-0-filefield-remove:hover,
+#edit-field-artist-upload-w8-0-filefield-remove:hover,
+#edit-field-song-mp3-0-filefield-remove:hover
+{
+  background: url("../images/buttons_sitewide.png") no-repeat scroll -626px -250px transparent;
+}
+
+
+
+/* REMOVE HELP FROM REGISTRATION PAGES */
+#register_register_help
+{
+  display: none !important;
+}
+
+a#help_link
+{
+  display: none !important;
+}
+
+/* MODAL LOADING IMG */
+.modal-loader-img{
+  display:block;
+  margin:0 auto;
+  
+}
+
+.modal-add-to-playlist-loading{
+  height:100px;
+}
+
+/* PLAYLISTS PAGE DOWNLOAD LINK */
+a.download-songs{
+  display:block;
+  float:left;
+  margin-top:10px;
+}
+
+/* GOT MUSIC FORM STYLES */
+#register_register_breadcrumb{
+  display:none;
+}
+
+#register_register_form{
+  display:block;
+  clear:both;
+  background-color:#EEE;
+}
+
+#user-register{
+  display:block !important;
+}
+
+#register_register_got_or_want{
+  display:none;
+}
+
+#register_register_form_columns{
+  width:auto !important;
+  padding:0px;
+}
+
+.block form fieldset{
+  margin:0px;
+  padding:0px;
+}
+
+
+/* DASHBOARD FORM */
+.dashboard-form-wrapper{
+  /*padding:30px;*/
+}
+
+/* CONTACT INFO ON PLAYLIST PAGE */
+body.node-type-playlist #playlist_contact, body.playlist #playlist_contact{
+  left:775px;
+  font-size:10px;
+  position:absolute;
+  top:29px;
+  z-index:5; 
+  height:49px;
+}
+
+/* ARTIS BY: ON PLAYLIST PAGE */
+#artistInfoContainer p{
+  text-align:left;  
+}
+
+
+/* PLAYLIST UPDATED */
+#node-has-been-updated{
+  clear:both;
+}
+
+body.node-type-playlist #playlist_contact h3, body.playlist #playlist_contact h3{
+  font-size:10px; 
+  display:none;
+}
+
+body.node-type-playlist #playlist_contact ul, body.playlist #playlist_contact ul{
+  font-size:10px;
+  margin:0px;
+  padding:0px;
+}
+
+/* ZIP DOWNLOAD ON PLAYLIST PAGE */
+body.node-type-playlist ul.user_function_buttons, body.playlist ul.user_function_buttons{
+  position:relative;
+  top:auto;
+  left:auto;
+  margin:0px;
+  float:right;
+}
+
+body.node-type-playlist #playlist_header, body.playlist #playlist_header{
+  margin:0px !important;
+  background:none !important;
+  padding:0px !important;
+  width: auto !important;
+}
+
+/* SONG UPLOAD BUTTON */
+input#edit-field-song-mp3-0-filefield-upload{
+  display:none;
+}
+
+/* USER FUNCTION BUTTONS (staff/admin buttons that get added sometimes) */
+ul.user_function_buttons li a{
+  border:0px;
+  background:none;
+}
+
+.panel-mdfixed2col,.panel-col-last .top{
+  min-height:0px !important;
+}
+
+/* ARTIST PROFILE PAGE "CARD" (profile image) */
+div#ajaxpage #card{
+  border-top:1px solid #dedede;
+  padding:12px;
+}
+
+#textbox-soundslike{
+  height:25px;
+}
+
+table#field_playlist_update_list_values{
+  clear:both !important;
+}
+
+/* MEET THE TEAM BIOS OVERFLOW */
+div.field-field-team-bio{
+  overflow-x: hidden;
+  overflow-y: auto;
+  height:135px;
+  margin-top:10px;
+}
+
+/* CUSTOM SCROLLBARS COPIED FROM SCREEN.CSS */
+/* ---------------------------------------------------------------------
+  Custom Scroll Bar
+------------------------------------------------------------------------ */
+
+.jspContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane {
+  position: absolute;
+}
+
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 9px;
+  height: 100%;
+}
+
+.jspVerticalBar {
+  margin: 0;
+  padding: 0;
+}
+
+.jspCap {
+  display: none;
+}
+
+.jspTrack {
+  background: #EEEEEE;
+  position: relative;
+}
+
+.jspDrag {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url(../images/sidebar-sprite.png) -5px -951px no-repeat;
+  cursor: pointer;
+}
+
+/* DEAL BOARD - HIDE MONEY ICONS */
+ul#job-board-money-key{
+//  display:none;
+}
+
+/* Clients Page Css */
+body#pid-clients .grid12-9 .content-content{
+  padding:30px;
+}
+
+/*
+ * PLAY LONDON
+ */
+body.playlondon{
+  background-image:url('/sites/all/themes/md_fusion/images/playlondon_iframe_bg.jpg');
+  background-repeat:no-repeat;
+  background-color:#adadad;
+  background-position:10% 30% 0 0;
+  margin:0px;
+  padding:0px;
+}
+
+body.playlondon #loginbox{
+  background-image:url('/sites/all/themes/md_fusion/images/playlondon_login-new.jpg');
+  background-repeat:none;
+  /*background-position:-155px -40px;*/
+  width:960px;
+  height:890px;
+  display:block;
+  margin:0px auto 0px auto;
+}
+
+body.playlondon form#user-login-1,
+body.playlondon form#user-login{
+  margin:447px 0 0 140px;
+  float:left;
+  padding:0px;
+}
+
+
+body.playlondon #login_username_field-wrapper{
+  margin-top:10px;
+}
+
+body.playlondon form#user-login-1 input,
+body.playlondon form#user-login input{
+  margin:10px;
+  width:150px !important;
+}
+
+
+body.playlondon form#user-login-1 input#login_username_submit_image_button,
+body.playlondon form#user-login input#login_username_submit_image_button{
+  margin:-42px 0 0 257px !important;
+  float:left;
+  background-image:url('/sites/all/themes/md_fusion/images/playlondon_sprite-new.png') !important;
+  background-repeat:no-repeat !important;
+  background-position: -38px -5px !important;
+  
+  border-radius:0px !important;
+  -moz-border-radius: 0px !important;
+  -webkit-border-radius:  0px !important;
+  
+  box-shadow:0px !important;
+  -moz-box-shadow: 0px !important;
+  -webkit-box-shadow: 0px !important;
+  
+  border:0px; !important;
+  font-size:10px;
+  background-color:transparent !important;
+  text-indent:-9999px;
+  width:67px !important;
+  height:35px !important;
+  /*margin:0px !important;*/
+  padding:0px !important;
+}
+
+body.playlondon label{
+  color:#fff;
+  font-size:12px;
+  width:70px;
+  float:left;
+  display:block;
+  margin:17px 0 0 0;
+  padding:0px;
+}
+
+body.playlondon div#log{
+  width: 400px; 
+  height: 30px; 
+  float: left; 
+  font-size: 12px; 
+  color: #fff; 
+  margin-top: -120px; 
+  margin-left: 158px;
+  color:#adadad;
+}
+
+body.playlondon center{
+  color:#eee;
+  font-size:22px;
+  margin-top:55px;
+  
+}
+
+body.playlondon div#dont{
+  color: #ADADAD;
+  display: block;
+  float: left;
+  font-size: 14px;
+  height: 40px;
+  line-height: 34px;
+  margin-left: 159px;
+  margin-top: 6px;
+  width: 312px;
+  
+}
+
+body.playlondon a#register{
+background-image: url("/sites/all/themes/md_fusion/images/playlondon_sprite-new.png") !important;
+    background-position: -7px -63px !important;
+    background-repeat: no-repeat !important;
+    display: block;
+    float: right;
+    height: 35px;
+    text-indent: -9999px;
+    width: 105px;
+}
+
+body.playlondon div#videos{
+    /*border: 1px solid red;*/
+    clear: both;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    margin: 251px 0 0px;
+    padding: 20px;
+    width: 100%;
+}
+
+*{
+  outline:none;
+}
+
+body.playlondon div.description{
+  display:none;
+}
+
+body.playlondon #iframewrapper{
+    background:url("/sites/all/themes/md_fusion/images/playlondon_iframe_bg.jpg") no-repeat scroll top;
+    display:block;
+    width:100%;
+    background-color:#000;
+}
+
+/* 
+ * Hide the pro other fields when uploading songs.  This was done before, but I believe only on the artist create page
+ * HEY LOOK STEVE CAN FRONTEND TOO!
+ */
+#edit-group-song-writer-0-field-song-writers-aff-value { display:none;}
+#edit-group-song-publisher-0-field-song-pub-aff-value {display:none;}
+
+/*
+ * DTOOL GEAR MENU
+ */
+ul.playlist-gear a{
+  color:#fff;
+}
+
+ul.playlist-gear a:hover{
+  color:#fff;
+}
+
+#pid-exclusive .panel-mdfixed2col .panel-col-last{
+  border-left: none; !important;
+}
+
+
+
+
+
+
+
+
+tbody{
+  border-top:0px !important;
+}
+
+/* FOR SIDEBAR MENUS // SOMETHING TA DO WITH PANELS */
+.panel-col-first .item-list ul {
+    margin: 0;
+    width: 235px;
+}
+
+fieldset table{
+  clear:both;
+}
+
+/* GET RID OF ARTIST CARD (pic) on these pages */
+body#pid-myhome div#card,
+body#pid-myhome-addrep div#card,
+body#pid-myhome-mailing-lists div#card,
+body#pid-myhome-myaccount div#card
+{
+  display:none;
+}
+
+/* ARTIST PROFILE ARTISTS AND REPS */
+.mini_view
+{
+    float: left;
+    font-size: 11px;
+    height: 130px;
+    padding: 0 30px 0 0;
+    width: 72px;
+}
+
+.mini_view a{
+  display:block;
+  text-align:center;
+}
+
+.view-perms-artists-all, .view-perms-reps-all{
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+.tooltip{
+  text-indent:-9999px;
+  display:block;
+  width:16px;
+  height:16px;
+  float:left;
+  margin-right:10px;
+  background-image:url('/sites/all/themes/md_fusion/images/information.png');
+}
+
+/**
+ *   
+ * STYLES FOR jqModal
+ * 
+ */
+/* jqModal base Styling courtesy of;
+  Brice Burgess <bhb@iceburg.net> */
+
+/* The Window's CSS z-index value is respected (takes priority). If none is supplied,
+  the Window's z-index value will be set to 3000 by default (via jqModal.js). */
+  
+.jqmWindow {
+    display: none;
+    
+    position: fixed;
+    top: 17%;
+    left: 50%;
+    
+    margin-left: -300px;
+    width: 600px;
+    
+    background-color: #ddd;
+    color: #000;
+    border: 5px solid #1866A8;
+    padding: 12px;
+}
+
+.jqmOverlay { background-color: #000; }
+
+/* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
+* iframe.jqm {position:absolute;top:0;left:0;z-index:-1;
+  width: expression(this.parentNode.offsetWidth+'px');
+  height: expression(this.parentNode.offsetHeight+'px');
+}
+
+/* Fixed posistioning emulation for IE6
+     Star selector used to hide definition from browsers other than IE6
+     For valid CSS, use a conditional include instead */
+* html .jqmWindow {
+     position: absolute;
+     top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+}
+
+/**
+ * 
+ * UI DATEPICKER  
+ * 
+ */
+.ui-datepicker-month,.ui-datepicker-year{
+  height:30px;
+}
+
+.ui-datepicker-div{
+  border:1px solid;
+  padding:10px;
+  margin-top:10px;
+  background:#fff;
+}
+
+/**
+ *   FOR NODE EDIT PAGE SONGS GENRES AND STUFF
+ */
+.content-inner.block,
+.content-region.row.nested,
+.main-content.row.nested,
+.main-group.row.nested,
+.content-group.row.nested,
+.content-region-inner.inner
+{
+  overflow: visible !important;
+}
+
+
+
+#mood-wrapper,
+#genre-wrapper,
+#secondarygenre-wrapper,
+#instruments-wrapper,
+#vocalthemes-wrapper,
+#vocalthemes-wrapper,
+#tempo-wrapper
+{
+  margin-left:-296px !important;
+  position:relative !important;
+  z-index: 1000 !important;
+  background-color:#fff !important;
+  padding:10px !important;
+  border:1px solid #ddd !important;
+}
+
+#ddblock-prev-next-pager-1{
+  height: 63px;
+  position: absolute;
+  top: 158px;
+  width: 1020px !important;
+  z-index: 1000;
+}
+
+#prev2{
+  float:left !important;
+  background:url('/sites/all/themes/md_fusion/images/arrow-left.png') !important;
+  border: medium none;
+  float: left !important;
+  height: 36px;
+  opacity: 0.5;
+  text-indent: -999px;
+  width: 24px;
+  position:absolute;
+  left:34px;
+}
+
+#next2{
+  float:right !important;
+  background:url('/sites/all/themes/md_fusion/images/arrow-right.png') !important;
+  border: medium none;
+  float: left !important;
+  height: 36px;
+  opacity: 0.5;
+  text-indent: -999px;
+  width: 24px;
+  position:absolute;
+  right:32px;
+}
+
+
+
+#ddblock-number-pager-1{
+  display: block;
+  height: 25px;
+  left: 390px;
+  position: absolute;
+  text-align: center;
+  top: 361px;
+  width: 200px !important;
+  z-index: 1000;
+}
+
+.ddblock-number-pager a{
+  background-color: #D4312C !important;
+  border: 0 none;
+  -moz-border-radius: 13px 13px 13px 13px;
+  -webkit-border-radius: 13px 13px 13px 13px;
+  border-radius: 13px 13px 13px 13px;
+  color: #FFFFFF !important;
+  display: inline-block;
+  float: none !important;
+  height: 15px;
+  line-height: 15px;
+  margin: 0 3px;
+  padding: 2px;
+  width: 16px;
+  text-decoration:none;
+  -moz-box-shadow:0 0 5px #000000;
+  -webkit-box-shadow:0 0 5px #000000;
+  box-shadow:0 0 5px #000000;
+  /*border-top:1px solid #fff;*/
+}
+
+.ddblock-number-pager a.activeSlide{
+  background-color: #000 !important;
+  color: #ffffff !important;
+}
+
+.ddblock-number-pager a:hover{
+  text-decoration:none;
+  
+}
+
+/* FOR PREV/NEXT PAGER FOR HOME SLIDESHOW 
+#prev2{
+  float:left !important;
+  background:url('/sites/default/files/md_fusion_logo.jpg') !important;
+}
+
+#next2{
+  float:right !important;
+  background:url('/sites/default/files/md_fusion_logo.jpg') ;
+}
+*/
+
+body#pid-blog-music-dealers-artist-opportunities{
+  
+}
+
+
+
+

@@ -1,0 +1,44 @@
+/* Ahoy hoy.  Steve can make magic here with out Breaking Karl's magic, or at least being accountable for breaking Karl's Magic. */
+#pid-exclusive .mb_views_summary {
+      display: block;
+}
+.job-board-exclusives {
+  background: url("../images/dealboard-exclusive-bg.jpeg") no-repeat scroll 50% 0 #656565;
+}
+.job-board-exclusives li, .job-board-exclusives p {
+  color:white;
+  font-size:15px;
+}
+#exclusive-wrapper {
+  width:600px;
+  padding:15px;
+}
+#exclusive-wrapper ul li{
+  list-style-type:disc;
+}
+#exclusive-wrapper h1 {
+  font-family:FranklinGothicBkCp, Arial, sans-serif;
+  color:white;
+  font-size:50px;
+}
+#exclusive-postcript {
+  padding:15px;
+  background-color:black;
+}
+#exclusive-postcript p {
+  color:#adadad;
+}
+.job-board-exclusives #job-board-key , .job-board-exclusives #job-board-money-key 
+{
+  display:none; 
+}
+#pid-exclusive .view-content {
+  padding-left:0px;
+}
+p#exclusive-md 
+{
+  color:#adadad;
+}
+#pid-exclusive .views-field-field-job-due-date-value-1 {
+  display:none;
+}

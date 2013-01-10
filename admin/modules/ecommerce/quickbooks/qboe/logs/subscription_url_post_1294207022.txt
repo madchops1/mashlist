@@ -1,0 +1,8 @@
+Array
+(
+    [appid] => 187151316
+    [authid] => 187152616
+    [conntkt] => TGT-232-q8ixZ7iKCnHQChTGrTGnGQ
+    [status] => active
+    [appdata] => 1
+)

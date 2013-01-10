@@ -1,0 +1,169 @@
+/* styles for displaying the editor */
+
+/* 
+ * NOTE: this stylesheet is also included into dialog windows.
+ * To isolate a style for the editor only use the .blue prefix.
+ * To indicate a style that is shared between the editor and dialog windows use the .wproDialogEditorShared prefix.
+ * To indicate a style that should only be used for dialog windows use the .wproDialog prefix
+ *
+ * To ensure that editor styles for this theme are isolated from other editors on the same page that might use a different theme please prefix with the name of your theme.
+*/
+/* styles for the main editor interface */
+/* used to hide elements */
+/* general html elements */
+.blue div {
+	color: #092061;
+}
+.blue button {
+	color: #092061;
+}
+/* editor border and background */
+.blue div.wproBorder {
+	border:1px solid #003aa2;
+	background:#a9c6f6 url(editorBottom.gif) repeat-x bottom;
+}
+/* load message */
+.blue div.wproLoadMessage {
+	background-color:#ffffff;
+	color:#000000;
+	border:1px solid #003aa2;
+}
+.blue div.wproLoadMessage img {
+	vertical-align: top;
+}
+
+/* toolbars */
+.blue div.wproToolbarHolder {
+	background: #b6d2ee url(toolbarBackground.gif) repeat-x top;
+}
+/* toolbar buttons */
+/* button over */
+.blue button.wproOver {
+	border: #00008d 1px solid;
+	background-color: #ffb968;
+}
+/* button  down */
+.blue button.wproDown,.blue button.wproLatched,.blue button.wproLatchedOver {
+	border: #00008d 1px solid;
+	background-color: #ffb968;
+}
+/* button active */
+.blue button.wproLatched {
+	background-color:#ffb968;
+}
+/* button active over */
+.blue button.wproLatchedOver {
+	background-color: #ffb968;
+}
+/* button disabled */
+.blue button.wproDisabled {
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	opacity:0.3;
+}
+/* hidden button disabled */
+.blue button.wproHidden {
+	display: none;
+}
+/* custom drop-down lists */
+.blue button.wproDropDown {
+	border: 1px solid #567db0;
+	background-image: url(downarrow.gif);
+	background-color: #eaf2fb;
+}
+/* separators */
+.blue img.wproSeparator {
+	border-left:2px groove #a9c6f6 !important;
+}
+/* framefix repairs display of iframe width DO NOT ALTER */
+.blue fieldset.wproFrameFix {
+	border:1px solid #567db0;
+	background-color:#567db0;
+}
+/* tag path */
+.blue div.wproTagPath {
+	border-bottom:1px solid #567db0;
+	border-left:1px solid #567db0;
+	border-right:1px solid #567db0;
+	border-top:0px solid #567db0;
+}
+/* spacer before tabs */
+.blue div.wproTabNoTab {
+	border-width: 0px;
+}
+/* generic link styles for tabs */
+.blue .wproTabHolder .wproTabs button {
+	margin-top: 2px;
+	margin-left: -1px;
+	color: #092061;
+}
+/* active tab */
+.blue button.wproTButtonUp {
+	border: #00008d 1px solid;
+	background-color: #ffb968;
+	color: #092061;
+}
+/* mousedown on tab */
+.blue button.wproTButtonMouseDown {
+	border:1px solid #567db0;
+	color: #092061;
+}
+/* inactive tab */
+.blue button.wproTButtonDown {
+	border: 1px solid #567db0;
+	background: url(buttonBackground.gif) center center repeat-x;
+	color: #092061;
+}
+/* message area to right of tabs */
+.blue div.wproMessages {
+	border-width: 0px;
+}
+.blue div.wproMessages button {
+	margin-top: 2px;
+}
+/* floating menus: custom drop-downs, menus and context menu */
+/* this holds menus while they are invisible */
+/* menu borders and background */
+.blue div.wproFloatingMenu,.blue iframe.wproFloatingMenu {
+	border:1px solid #567db0;
+	background:#eaf2fb url(menuBackground.gif) left repeat-y;
+}
+/* generic link styles for menus */
+.blue div.wproFloatingMenu a,.blue div.wproFloatingMenu a:link,.blue div.wproFloatingMenu a:active,.blue div.wproFloatingMenu a:hover,.blue div.wproFloatingMenu a:visited {
+	padding: 1px;
+}
+/* mouse over menu item */
+.blue div.wproFloatingMenu a.wproOver,.blue div.wproFloatingMenu a.wproOver:link,.blue div.wproFloatingMenu a.wproOver:active,.blue div.wproFloatingMenu a.wproOver:hover,.blue div.wproFloatingMenu a.wproOver:visited {
+	color:#092061 !important;
+	background-color:#ffb968;
+	border: 1px solid #00008d;
+	padding: 0px;
+}
+.blue div.wproFloatingMenu div.wproSeparator {
+	border-top: 1px solid #666666;
+}
+/* separators in menus */
+.blue div.wproFloatingMenu div.wproTitleSeparator {
+	background-color: #333333;
+	color: #ffffff;
+}
+/* active menu items */
+.blue div.wproFloatingMenu a.wproLatched {
+	border: #00008d 1px solid;
+	background-color: #ffb968;
+	color: #092061;
+	padding: 0px;
+}
+/* disabled menu items */
+.blue div.wproFloatingMenu a.wproDisabled {
+	display:none;
+}
+/* optional iframe dialogs */
+/* NOTE: so that we don't have to enter the design of this again for dialog windows we use the .wproDialogEditorShared prefex */
+.blue .wproFloatingDialog {
+	border: 1px solid #3b5a82;
+	background-color: #a9c6f6;
+}
+.blue iframe.wproFloatingDialog {
+	background-color: #a9c6f6;
+}

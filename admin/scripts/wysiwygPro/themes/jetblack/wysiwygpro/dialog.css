@@ -1,0 +1,221 @@
+/* This CSS file controls the appearance of dialog windows */
+/* styles for dialog plugins */
+/* General HTML elements */
+
+/* plugin specific */
+
+.wproCore_fileBrowser .bottomOptions {
+	border-top: 1px solid #666666;
+}
+.wproCore_fileBrowser .topOptions {
+	border-bottom: 1px solid #666666;
+}
+.wproCore_fileBrowser .fileHolder {
+	background-color: #333333;
+}
+.wproCore_fileBrowser table.fileTable th.outset {
+	border-top-width: 0px;
+	border-left-width: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.wproCore_fileBrowser .fbLoadMessage {
+	color: #333333;
+}
+.wproCore_fileBrowser .thumbHolder div.thumb {
+	border: 1px solid #666666;
+	padding: 1px;
+}
+.wproCore_fileBrowser .thumbHolder label.name span {
+	color: #cccccc;
+}
+.wproCore_fileBrowser_outlook {
+	background-color: #333333;
+}
+.wproCore_fileBrowser_outlook .outlookList a.selected {
+	background: url(sideBarSelected.gif) repeat-x center;
+}
+.wproCore_fileBrowser_linksBrowser {
+	background-color: #333333;
+	border-top-width: 0px;
+}
+.wproCore_fileBrowser_preview {
+	background-color: #666666;
+	border-top-width: 0px;
+}
+wproCore_fileBrowser_moveCopy .rightColumn {
+	background-color: #333333;
+}
+.wproCore_specialCharacters .selectCharacter {
+	border-bottom: 1px solid #666666;
+}
+.wproCore_specialCharacters .characterScroll a {
+	background-color: #666666;
+}
+.wproCore_specialCharacters .characterScroll a.selected {
+	background-color: #c64934;
+}
+.wproCore_snippets .UISelectLeftCol {
+	background-color: #333333;
+}
+
+/* general */
+body {
+	/*border-top:3px solid #c64934;*/
+	background-color: #000000;
+}
+a {
+	color:#ffffff;
+}
+input,select,option,button {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:11px;
+	color: #ffffff;
+}
+/* form elements */
+input, textarea, select {
+	border: 1px solid #666666;
+	background-color:#333333;
+	color: #ffffff;
+}
+.wproCore_fileBrowser #fileTable input {
+	border-width: 0px;
+	background-color: transparent;
+}
+input[type='checkbox'], input[type='radio'] {
+	border-width: 0px;
+	background-color: transparent;
+}
+fieldset {
+	border: 1px solid #666666;
+}
+legend {
+	color: #ffffff;
+}
+hr {
+	border-top: 1px solid #666666;
+	height: 1px; 
+	background-color: #666666;
+}
+/* title bar, used only for iframe dialogs */
+.titleBar {
+	background:#c64934;
+	color: #ffffff;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+}
+.titleBar .closeButton {
+	margin-right: 0px;
+}
+/* iframe used for showing previews */
+.previewFrame {
+	border:1px solid #333333;
+	background-color:#999999;
+}
+/* holder for buttons along bottom of dialog window */
+.buttonHolderContainer {
+	border-top:1px solid #666666;
+}
+/* buttons */
+.messageExitButtons input,.buttonHolder input,input.button,input.largeButton, .messageExitButtons button,.buttonHolder button,button.button,button.largeButton {
+	background:#000000 url(editorBackground.gif) repeat-x top;
+	color: #ffffff;
+	border: 1px solid #666666;
+}
+/* small buttons */
+button.chooserButton {
+	padding: 0px; 
+	margin: 0; 
+	border-width: 0px;
+	background-color: transparent;
+}
+/* help bar at top of window */
+.helpBar {
+	border-bottom:1px solid #666666;
+}
+/* selected item colors */
+.selected,button.selected,a.selected {
+	color:#ffffff;
+	background-color:#c64934;
+}
+/* indented borders */
+.inset, .insetWhite {
+	border-right:1px solid #666666;
+	border-top:1px solid #666666;
+	border-left:1px solid #666666;
+	border-bottom:1px solid #666666;
+	background-color: #333333;
+}
+/* outdented borders */
+.outset {
+	border-right:#666666 1px solid;
+	border-top:#666666 1px solid;
+	border-left:#666666 1px solid;
+	border-bottom:#666666 1px solid;
+}
+/* color picker UI element */
+button.UIColorPicker {
+	padding:0px;
+	margin:0px;
+	border-width: 0px;
+	background-color: transparent;
+}
+button.UIColorPicker div {
+	border:1px solid #666666;
+}
+/* Image radio UI element */
+.UIImageRadio {
+	padding-top:5px;
+}
+.UIImageRadio a {
+	color:#000000;
+}
+.UIImageRadio a.selected {
+	color:#ffffff;
+}
+.UIImageRadio a img {
+	border:1px solid #333333;
+}
+/* Select list interface */
+.UISelectLeftCol {
+	float:left;
+	width:165px;
+	padding:0px;
+	margin-bottom:5px;
+	margin-right:3px;
+}
+/* tabbed interface */
+.UITabbedTabHolder a {
+	color:#ffffff;
+}
+.UITabbedTabHolder a.selected {
+	color:#ffffff;
+	background-color:#333333;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+}
+.UITabbedPaneHolder {
+	padding-top: 5px;
+	background-color: #333333;
+}
+/* small inline error messages */
+div.smallWarning {
+	border:1px solid #333333;
+	background-color:#FFFF99;
+	color: #000000;
+}
+/* small inline information messages */
+div.smallInformation {
+	padding: 3px;
+	border:1px solid #333333;
+	background-color:#FFFF99;
+	color: #000000;
+}
+.smallInformation img {
+	vertical-align:middle;
+}
+/* message exit: error and information messages */
+.messageExitTitleBar {
+	border-bottom:1px solid #666666;
+}

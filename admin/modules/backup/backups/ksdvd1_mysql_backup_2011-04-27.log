@@ -1,0 +1,19 @@
+2011-04-27 21:39:29: Executing MySQL Backup Script v1.4
+2011-04-27 21:39:29: Processing Databases..
+2011-04-27 21:39:29: Dumped DB: mysql
+2011-04-27 21:39:30: Compressed DB: mysql
+2011-04-27 21:39:30: Dumped DB: test
+2011-04-27 21:39:30: Compressed DB: test
+2011-04-27 21:39:30: Dumped DB: wes-bradleyreps
+2011-04-27 21:39:31: Compressed DB: wes-bradleyreps
+2011-04-27 21:39:31: Dumped DB: wes-kidsplayworld
+2011-04-27 21:39:32: Compressed DB: wes-kidsplayworld
+2011-04-27 21:39:32: Dumped DB: wes-mega
+2011-04-27 21:39:34: Compressed DB: wes-mega
+2011-04-27 21:39:34: Dumped DB: wes-osplacejazz
+2011-04-27 21:39:35: Compressed DB: wes-osplacejazz
+2011-04-27 21:39:36: Dumped DB: wes-shebeads
+2011-04-27 21:39:37: Compressed DB: wes-shebeads
+2011-04-27 21:39:37: Archiving files..
+2011-04-27 21:39:37: Backup complete!
+2011-04-27 21:39:37: Emailing backup to karl@webksd.com ..

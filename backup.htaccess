@@ -1,0 +1,77 @@
+########################################################################################################################################
+#
+#	88      a8P   ad88888ba   88888888ba,    
+#	88    ,88'   d8"     "8b  88      `"8b   
+#	88  ,88"     Y8,          88        `8b  
+#	88,d88'      `Y8aaaaa,    88         88  
+#	8888"88,       `"""""8b,  88         88  
+#	88P   Y8b            `8b  88         8P  
+#	88     "88,  Y8a     a8P  88      .a8P   
+#	88       Y8b  "Y88888P"   88888888Y"'    
+#
+# Karl Steltenpohl Development LLC
+# Web Business Framework
+# Version 1.0
+# Copyright 2010 Karl Steltenpohl Development All Rights Reserved
+#
+# Commercially Licensed 
+# View License At: http://www.karlsdevelopment.com/web-business-framework/license
+#
+########################################################################################################################################
+#AddHandler x-httpd-php .php
+#AddHandler x-httpd-php .php4
+#AddHandler php-script .php5
+AddType application/x-httpd-php .php5
+
+#
+# PHP SETTINGS FOR UPLOAD SIZE
+#
+php_value upload_max_filesize 100M
+php_value post_max_size 200M
+
+#
+# USER AUTHENTICATION
+#
+#AuthUserFile /home/content/32/5380632/html/.htpasswd
+#AuthGroupFile /null
+#AuthName "EnterPassword"
+#AuthType Basic
+#require valid-user
+
+#
+# ERROR PAGES
+#
+#ErrorDocument 401 /home/content/32/5380632/html/401.php
+#ErrorDocument 403 /home/content/32/5380632/html/403.php
+#ErrorDocument 404 /home/content/32/5380632/html/404.php
+#ErrorDocument 500 /home/content/32/5380632/html/500.php
+
+#
+# MOD REWRITE
+#
+Options +FollowSymlinks
+RewriteEngine On
+
+# ADMIN FLAG
+RewriteRule ^admin$ - [R,L] /admin/index.php
+RewriteRule ^admin/$ - [R,L] /admin/index.php
+
+# PREVIEW FLAG
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)$ index.php?page=$1&FORM1=$2&REPORT=$3&SUCCESS=$4&PREVIEW=$5 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/$ index.php?page=$1&FORM1=$2&REPORT=$3&SUCCESS=$4&PREVIEW=$5 [L]
+
+# SUCCESS FLAG
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\]+)/([^/\.]+)$ index.php?page=$1&FORM1=$2&REPORT=$3&SUCCESS=$4 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\]+)/([^/\.]+)/$ index.php?page=$1&FORM1=$2&REPORT=$3&SUCCESS=$4 [L]
+
+# REPORT STRING
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)$ index.php?page=$1&FORM1=$2&REPORT=$3 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/$ index.php?page=$1&FORM1=$2&REPORT=$3 [L]
+
+# FORM1 COMMAND UPPERCASE -- CAN BE ARRAY HOPEFULLY!
+RewriteRule ^([^/\.]+)/([^/\.]+)$ index.php?page=$1&FORM1=$2 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/$ index.php?page=$1&FORM1=$2 [L]
+
+# PAGE CLEAN URL
+RewriteRule ^([^/\.]+)$ index.php?page=$1 [L]
+RewriteRule ^([^/\.]+)/$ index.php?page=$1 [L]

@@ -1,0 +1,234 @@
+/* This CSS file controls the appearance of dialog windows */
+/* styles for dialog plugins */
+/* General HTML elements */
+
+/* plugin specific */
+
+.wproCore_fileBrowser .bottomOptions {
+	border-top: 1px solid #567db0;
+}
+.wproCore_fileBrowser .topOptions {
+	border-bottom: 1px solid #567db0;
+}
+
+.wproCore_fileBrowser table.fileTable th.outset {
+	border-top-width: 0px;
+	border-left-width: 0px;
+	padding: 1px 5px 2px 5px;
+	border-color: #d5d5d7;
+	background: url(fileSort.gif) center repeat-x;
+}
+.wproCore_fileBrowser table.fileTable th.sorted {
+	background: url(fileSortActive.gif) repeat-x center;
+}
+.wproCore_fileBrowser table.fileTable td {
+	border-right: 1px solid #eeeeee;
+}
+.wproCore_fileBrowser .fbLoadMessage {
+	color: #003aa2;
+}
+
+.wproCore_fileBrowser_outlook {
+	background-color: #eaf2fb;
+}
+.wproCore_fileBrowser_outlook .outlookList a {
+	padding-top: 6px;
+	padding-bottom: 11px;
+}
+.wproCore_fileBrowser_outlook .outlookList a.selected, .wproCore_fileBrowser_outlook .outlookList a:hover {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	border: 1px solid #00008d;
+	background-color: #ffb968;
+}
+
+.wproCore_specialCharacters .selectCharacter {
+	border-bottom: 1px solid #567db0;
+}
+.wproCore_specialCharacters .characterScroll a {
+	background-color: #eaf2fb;
+}
+.wproCore_specialCharacters .characterScroll a.selected {
+	background-color: #ffb968;
+}
+.wproCore_snippets .UISelectLeftCol {
+	background-color: #eaf2fb;
+}
+
+/* general */
+body {
+	/*border-top:3px solid #c64934;*/
+	background-color: #a9c6f6;
+	/*color: #092061;*/
+	color: #bfdbff;
+}
+input,select,option,button {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:11px;
+	color: #092061;
+}
+/* form elements */
+input, textarea, select {
+	border: 1px solid #567db0;
+	background-color:#eaf2fb;
+	color: #092061;
+}
+.wproCore_fileBrowser #fileTable input {
+	border-width: 0px;
+	background-color: transparent;
+}
+input[type='checkbox'], input[type='radio'] {
+	border-width: 0px;
+	background-color: transparent;
+}
+fieldset {
+	border: 1px solid #567db0;
+}
+legend {
+	color: #092061;
+}
+hr {
+	border-top: 1px solid #567db0;
+	height: 1px; 
+	background-color: #567db0;
+}
+/* title bar, used only for iframe dialogs */
+.titleBar {
+	background: #567db1 url(titlebarBackground.gif) top repeat-x;
+	font-weight: normal;
+	color: #092061;
+}
+.titleBar .closeButton {
+	
+}
+/* iframe used for showing previews */
+.previewFrame {
+	border:1px solid #567db0;
+}
+/* holder for buttons along bottom of dialog window */
+.buttonHolderContainer {
+	border-top:1px solid #567db0;
+}
+/* buttons */
+.messageExitButtons input,.buttonHolder input,input.button,input.largeButton, .messageExitButtons button,.buttonHolder button,button.button,button.largeButton {
+	background:#dae6f4 url(buttonBackground.gif) repeat-x top;
+	color: #092061;;
+	border: 1px solid #567db0;
+}
+/* small buttons */
+button.chooserButton {
+	padding: 0px; 
+	margin: 0; 
+	border-width: 0px;
+	background-color: transparent;
+}
+/* help bar at top of window */
+.helpBar {
+	border-bottom:1px solid #567db0;
+}
+/* selected item colors */
+.selected,button.selected,a.selected {
+	color: #092061;;
+	background-color:#ffb968;
+}
+/* indented borders */
+.inset {
+	border-right:1px solid #567db0;
+	border-top:1px solid #567db0;
+	border-left:1px solid #567db0;
+	border-bottom:1px solid #567db0;
+	background-color: #eaf2fb;
+}
+
+.insetWhite {
+	border-right:1px solid #567db0;
+	border-top:1px solid #567db0;
+	border-left:1px solid #567db0;
+	border-bottom:1px solid #567db0;
+	background-color: #ffffff;
+}
+/* outdented borders */
+.outset {
+	border-right:#567db0 1px solid;
+	border-top:#567db0 1px solid;
+	border-left:#567db0 1px solid;
+	border-bottom:#567db0 1px solid;
+}
+/* color picker UI element */
+button.UIColorPicker {
+	padding:0px;
+	margin:0px;
+	border-width: 0px;
+	background-color: transparent;
+}
+button.UIColorPicker div {
+	border:1px solid #567db0;
+}
+/* Image radio UI element */
+.UIImageRadio {
+	padding-top:5px;
+}
+.UIImageRadio a {
+	color:#000000;
+}
+.UIImageRadio a.selected {
+	color: #092061;
+}
+.UIImageRadio a img {
+	border:1px solid #003aa2;
+}
+/* Select list interface */
+.UISelectLeftCol {
+	float:left;
+	width:165px;
+	padding:0px;
+	margin-bottom:5px;
+	margin-right:3px;
+}
+/* tabbed interface */
+.UITabbedTabHolder a {
+	color: #092061;
+	background: url(buttonBackground.gif) repeat-x top;
+}
+.UITabbedTabHolder a.selected {
+	color: #092061;
+	border-color: #567db0;
+	background-color:#dae6f4;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	background-image: none;
+}
+.UITabbedPaneHolder {
+	padding-top: 5px;
+	background-color: #dae6f4;
+}
+.UIImageRadio a {
+	border-width: 0px;
+	padding:4px 1px 4px 1px;
+}
+.UIImageRadio a.selected {
+	padding:3px 0px 3px 0px;
+	color: #092061;
+	border:1px solid #567db0;
+}
+/* small inline error messages */
+div.smallWarning {
+	border:1px solid #003aa2;
+	background-color:#FFFF99;
+	color: #000000;
+}
+/* small inline information messages */
+div.smallInformation {
+	padding: 3px;
+	border:1px solid #003aa2;
+	background-color:#FFFF99;
+	color: #000000;
+}
+.smallInformation img {
+	vertical-align:middle;
+}
+/* message exit: error and information messages */
+.messageExitTitleBar {
+	border-bottom:1px solid #567db0;
+}

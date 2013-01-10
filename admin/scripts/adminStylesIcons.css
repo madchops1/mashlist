@@ -1,0 +1,602 @@
+/*************************************************************************************************************************************
+*
+*	88      a8P   ad88888ba   88888888ba,    
+*	88    ,88'   d8"     "8b  88      `"8b   
+*	88  ,88"     Y8,          88        `8b  
+*	88,d88'      `Y8aaaaa,    88         88  
+*	8888"88,       `"""""8b,  88         88  
+*	88P   Y8b            `8b  88         8P  
+*	88     "88,  Y8a     a8P  88      .a8P   
+*	88       Y8b  "Y88888P"   88888888Y"'    
+*
+* 	This file is part of KSD's Wes software.
+*   Copyright 2010 Karl Steltenpohl Development LLC. All Rights Reserved.
+*	
+*	Licensed under a Commercial Wes License (a "Wes License");
+*	either the Wes Forever License (the "Forever License"),
+*	or the Wes Annual Licencse (the "Annual License");
+*	you may not use this file exept in compliance
+*	with at least one Wes License.
+*
+*	You may obtain a copy of the Wes Licenses at	
+*	http://www.wescms.com/license
+*
+*************************************************************************************************************************************/
+
+
+/*** Tabs B ***/
+	#tabsB {
+      /*float:right;*/
+	  padding:0px 0 0 0;
+      font-size:9px;
+      line-height:normal;
+	  /*background:#eee;*/
+	  
+	  -webkit-border-radius: 12px 12px 0px 0px;
+	  -moz-border-radius: 12px 12px 0px 0px;
+	  border-radius: 12px 12px 0px 12px;
+	  /*margin-bottom:15px;*/
+	  /*border-left:1px solid #fff;
+	  border-right:1px solid #fff;*/
+    }
+    
+	#tabsB ul {
+	    border-left: 1px solid #CCCCCC;
+	    display: block;
+	    list-style: none outside none;
+	    margin: 0 0 0 40px;
+	    padding: 0;
+    }
+    
+	#tabsB li {
+      /*display:inline-block;*/
+      margin:0px 0 -3px 0;
+      padding:0;
+      }
+    
+	#tabsB a {
+		float:left;
+		background:#f5f5f5;
+		margin:0 0 0 0px;
+		padding:0 0 0 20px;
+		text-decoration:none;
+		/*-webkit-border-radius: 7px 7px 0px 0px;
+		-moz-border-radius: 7px 7px 0px 0px;*/
+		
+		/*
+		-webkit-border-radius-topleft: 12px;
+		-moz-border-radius-topleft: 12px;
+		border-radius-topleft: 12px;
+		
+		-webkit-border-radius-topright: 12px;
+		-moz-border-radius-topright: 12px;
+		border-radius-topright: 12px;
+		*/
+		
+		/*
+		-moz-box-shadow:0px 5px 5px -5px #444444;
+		-webkit-box-shadow:0px 5px 5px -5px #444444;
+		box-shadow:0px 5px 5px -5px #444444;
+		*/
+		
+		color:#666;
+		border-right:1px solid #ddd;
+		border-left:1px solid #fff;
+		border-top:1px solid #eee;
+		
+    }
+    
+      #tabsB a span {
+      float:left;
+      display:block;
+      padding:5px;
+	  /*width: 88px;*/
+	  
+      }
+	
+	#tabsB a.active {
+	  /*background:#99d9f0;	*/
+	  background:#fff;	
+	  /*
+	  -moz-box-shadow:0px 5px 5px -5px #444444;
+	  -webkit-box-shadow:0px 5px 5px -5px #444444;
+	  box-shadow:0px 5px 5px -5px #444444;
+	  */
+	  
+		/*border-right:1px solid #99d9f0;
+		border-left:1px solid #99d9f0;
+		border-bottom:1px solid #99d9f0;
+		border-top:1px solid #99d9f0;*/
+		color:#000;
+    }
+    
+	#tabsB a.active span {
+    }
+    
+	/* Commented Backslash Hack hides rule from IE5-Mac \*/
+    #tabsB a span {float:none;}
+    /* End IE5-Mac hack */
+    
+	#tabsB a:hover, #tabsB a.active:hover{
+		color:#000;
+		background-color: #fff;
+	}
+	
+	#tabsB a:hover.active {
+	  color:#000;
+    }
+	
+	#tabsB a.Home{
+		background-image:url("../images/icons/home_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.Home{ 
+		background-image:url("../images/icons/home_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Slideshowv2{
+		background-image:url("../images/icons/image_slider_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.Slideshowv2{ 
+		background-image:url("../images/icons/image_slider_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Payment{
+		background-image:url("../images/icons/wallet_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.Payment{ 
+		background-image:url("../images/icons/wallet_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.CarCards{
+		background-image:url("../images/icons/car-insurance-cards_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.CarCards{ 
+		background-image:url("../images/icons/car-insurance-cards_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+      
+	
+	
+	
+	#tabsB a.Blog{
+		background-image:url("../images/icons/pencil_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.Blog{ 
+		background-image:url("../images/icons/pencil_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	
+	#tabsB a.Users{ 
+		background-image:url("../images/icons/user_admin_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.Users{
+		background-image:url("../images/icons/user_admin_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Customers{ 
+		background-image:url("../images/icons/user_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.Customers{
+		background-image:url("../images/icons/user_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Ecommerce{ 
+		background-image:url("../images/icons/buy_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.Ecommerce{
+		background-image:url("../images/icons/buy_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.PageFlip{ 
+		background-image:url("../images/icons/page_flip_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.PageFlip{
+		background-image:url("../images/icons/page_flip_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.FileManager{ 
+		background-image:url("../images/icons/briefcase_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.FileManager{
+		background-image:url("../images/icons/briefcase_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+
+	#tabsB a.MusicReviews{ 
+		background-image:url("../images/icons/music_reviews_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.MusicReviews{
+		background-image:url("../images/icons/music_reviews_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Slideshow{ 
+		background-image:url("../images/icons/image_slider_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.Slideshow{
+		background-image:url("../images/icons/image_slider_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.CustomerFileManager{ 
+		background-image:url("../images/icons/customer_file_manager_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.CustomerFileManager{
+		background-image:url("../images/icons/customer_file_manager_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.CMS{ 
+		background-image:url("../images/icons/document_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.CMS{
+		background-image:url("../images/icons/document_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Settings{ 
+		background-image:url("../images/icons/gear_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.Settings{
+		background-image:url("../images/icons/gear_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Database{ 
+		background-image:url("../images/icons/database_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.Database{
+		background-image:url("../images/icons/database_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Help{ 
+		background-image:url("../images/icons/help_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	.col2 ul li a.Help{
+		background-image:url("../images/icons/help_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Search{
+		background-image:url("../images/icons/search_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Info{
+		background-image:url("../images/icons/info_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Add{
+		background-image:url("../images/icons/plus_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Permissions{
+		background-image:url("../images/icons/key_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Layout{
+		background-image:url("../images/icons/document_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Photos{
+		background-image:url("../images/icons/file_photo_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Videos{
+		background-image:url("../images/icons/file_video_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Audio{
+		background-image:url("../images/icons/audio_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Documents{
+		background-image:url("../images/icons/file_document_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Up{
+		background-image:url("../images/icons/up_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Cart1{
+		background-image:url("../images/icons/basket_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Cart2{
+		background-image:url("../images/icons/buy_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Category{
+		background-image:url("../images/icons/categories_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Matrix{
+		background-image:url("../images/icons/matrix_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Form{
+		background-image:url("../images/icons/clipboard_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Analytics{ 
+		background-image:url("../images/icons/diagram_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	
+	.col2 ul li a.Analytics{
+		background-image:url("../images/icons/diagram_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Portfolio{ 
+		background-image:url("../images/icons/folder_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	
+	.col2 ul li a.Portfolio{
+		background-image:url("../images/icons/folder_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Contact{ 
+		background-image:url("../images/icons/bubble_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	
+	.col2 ul li a.Contact{
+		background-image:url("../images/icons/bubble_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Marketing{ 
+		background-image:url("../images/icons/globe_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	
+	.col2 ul li a.Marketing{
+		background-image:url("../images/icons/globe_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Events{ 
+		background-image:url("../images/icons/calendar_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	
+	.col2 ul li a.Events{
+		background-image:url("../images/icons/calendar_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.CarInsurance{ 
+		background-image:url("../images/icons/car-insurance_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	
+	.col2 ul li a.CarInsurance{
+		background-image:url("../images/icons/car-insurance_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Properties{ 
+		background-image:url("../images/icons/home_16.png");
+		background-image:url("../images/icons/home_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	
+	.col2 ul li a.Properties{
+		background-image:url("../images/icons/home_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Application{ 
+		background-image:url("../images/icons/application_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	
+	.col2 ul li a.Application{
+		background-image:url("../images/icons/application_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Contract{ 
+		background-image:url("../images/icons/contract_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	
+	.col2 ul li a.Contract{
+		background-image:url("../images/icons/contract_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.ScrollNavigation{ 
+		background-image:url("../images/icons/scrollnav_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	
+	.col2 ul li a.ScrollNavigation{
+		background-image:url("../images/icons/scrollnav_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.AutomatedEmails{ 
+		background-image:url("../images/icons/email_setting_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	
+	.col2 ul li a.AutomatedEmails{
+		background-image:url("../images/icons/email_setting_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Lists{ 
+		background-image:url("../images/icons/note_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	
+	.col2 ul li a.Lists{
+		background-image:url("../images/icons/note_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	#tabsB a.Request{ 
+		background-image:url("../images/icons/request_16.png");
+		background-repeat:no-repeat;
+		background-position:5px 2px;
+	}
+	
+	.col2 ul li a.Request{
+		background-image:url("../images/icons/request_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Report{
+		background-image:url("../images/icons/clipboard_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Wallet{
+		background-image:url("../images/icons/wallet_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Box{
+		background-image:url("../images/icons/box_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Taxes{
+		background-image:url("../images/icons/taxes_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.Email{
+		background-image:url("../images/icons/letter_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}
+	
+	.col2 ul li a.SimpleRequest{
+		background-image:url("../images/icons/simple-request_16.png");
+		background-repeat:no-repeat;
+		background-position:10px 7px;
+	}

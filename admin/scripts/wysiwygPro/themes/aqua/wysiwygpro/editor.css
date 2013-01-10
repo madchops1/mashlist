@@ -1,0 +1,159 @@
+/* styles for displaying the editor */
+
+/* 
+ * NOTE: this stylesheet is also included into dialog windows.
+ * To isolate a style for the editor only use the .themname prefix.
+ * To indicate a style that is shared between the editor and dialog windows use the .wproDialogEditorShared prefix.
+ * To indicate a style that should only be used for dialog windows use the .wproDialog prefix
+ *
+ * To ensure that editor styles for this theme are isolated from other editors on the same page that might use a different theme please prefix with the name of your theme.
+*/
+.aqua *{
+	font-family:LucidaGrande, Verdana, Arial, Helvetica, sans-serif;
+}
+.aqua div, .aqua button, .aqua select, .aqua a,.aqua a:link,.aqua a:hover,.aqua a:visited,.aqua a:active  {
+	font-family:LucidaGrande, Verdana, Arial, Helvetica, sans-serif;
+}
+
+.aqua div.wproBorder {
+	border:1px solid #a3a3a3;
+	background-color:#f0f0f0;
+	background-image:url(background.gif);
+}
+.aqua .wproDialogEditorShared div.wproLoadMessage {
+	border:1px solid #8b8b8b;
+}
+.aqua button.wproOver {
+	border-right:#dadada 1px solid;
+	border-top:#ffffff 1px solid;
+	border-left:#ffffff 1px solid;
+	border-bottom:#dadada 1px solid;
+}
+/* button  down */
+.aqua button.wproDown,.aqua button.wproLatched,.aqua button.wproLatchedOver {
+	border-right:1px solid #ffffff;
+	border-top:1px solid #dadada;
+	border-left:1px solid #dadada;
+	border-bottom:1px solid #ffffff;
+}
+/* button active */
+.aqua button.wproLatched {
+	background-color:#f7f7f7;
+}
+/* button active over */
+.aqua button.wproLatchedOver {
+	background-color:#f0f0f0;
+}
+/* separators */
+.aqua img.wproSeparator {
+	border-left:2px groove #ffffff !important;
+}
+/* framefix repairs display of iframe width DO NOT ALTER */
+.aqua fieldset.wproFrameFix {
+	border-top:1px solid #a3a3a3;
+	border-left:1px solid #a3a3a3;
+	border-right:1px solid #a3a3a3;
+	background-color: #dadada;
+}
+/* editable document iframes and preview iframe. */
+.aqua iframe.wproEditFrame,.aqua iframe.wproPreviewFrame {
+	background-color:#ffffff;
+}
+/* tag path */
+.aqua div.wproTagPath {
+	border-left:1px solid #a3a3a3;
+	border-right:1px solid #a3a3a3;
+	border-top:1px solid #a3a3a3;
+}
+/* view tabs along bottom of editor */
+.aqua div.wproTabHolder {
+	white-space:nowrap;
+	height:20px;
+}
+/* spacer before tabs */
+.aqua div.wproTabNoTab {
+	border-top:1px solid #a3a3a3;
+}
+/* generic link styles for tabs */
+.aqua .wproTabHolder .wproTabs button {
+	color:#000000;
+	margin-top: 2px;
+}
+/* active tab */
+.aqua button.wproTButtonUp {
+	border:1px solid #a3a3a3;
+	background: url(tabActive.gif) repeat-x center;
+	margin-right: -1px;
+}
+/* mousedown on tab */
+.aqua button.wproTButtonMouseDown {
+	border:1px solid #a3a3a3;
+	background: url(tabInactive.gif) repeat-x center;
+	margin-right: -1px;
+}
+/* inactive tab */
+.aqua button.wproTButtonDown {
+	border:1px solid #a3a3a3;
+	background: url(tabInactive.gif) repeat-x center;
+	margin-right: -1px;
+}
+/* message area to right of tabs */
+.aqua div.wproMessages {
+	border-top:1px solid #a3a3a3;
+}
+.aqua div.wproMessages button {
+	margin-top: 2px;
+}
+/* floating menus: custom drop-downs, menus and context menu */
+/* this holds menus while they are invisible */
+.aqua div.wproHiddenMenus {
+}
+/* menu borders and background */
+.aqua div.wproFloatingMenu,.aqua iframe.wproFloatingMenu {
+	color: #000000;
+	border:1px solid #dadada;
+	border-right:1px solid #dadada;
+	border-bottom:1px solid #dadada;
+	background: #f0f0f0;
+	background-image:url(background.gif);
+	filter:alpha(opacity=90) progid:DXImageTransform.Microsoft.Shadow(color=#707070,direction=135,strength=3);
+	-moz-opacity:0.9;
+	opacity:0.9;
+}
+/* generic link styles for menus */
+.aqua div.wproFloatingMenu a,.aqua div.wproFloatingMenu a:link,.aqua div.wproFloatingMenu a:active,.aqua div.wproFloatingMenu a:hover,.aqua div.wproFloatingMenu a:visited {
+	font-family:LucidaGrande, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+/* mouse over menu item */
+.aqua div.wproFloatingMenu a.wproOver,.aqua div.wproFloatingMenu a.wproOver:link,.aqua div.wproFloatingMenu a.wproOver:active,.aqua div.wproFloatingMenu a.wproOver:hover,.aqua div.wproFloatingMenu a.wproOver:visited {
+	color:#ffffff !important;
+	background-color:#3470cc;
+}
+.aqua div.wproFloatingMenu div.wproSeparator {
+	border-top:1px solid #dadada;
+	margin-left:0px;
+}
+.aqua div.wproFloatingMenu div.wproTitleSeparator {
+	background-color: #dadada;
+	color: #ffffff;
+}
+/* active menu items */
+.aqua div.wproFloatingMenu a.wproLatched {
+	background-color: #3470cc;
+	color: #ffffff;
+}
+/* optional iframe dialogs */
+/* NOTE: so that we don't have to enter the design of this again for dialog windows we use the .wproDialogEditorShared prefex */
+.aqua .wproFloatingDialog {
+	
+	border-left:1px solid #a3a3a3;
+	border-top:1px solid #a3a3a3;
+	border-right:1px solid #a3a3a3;
+	border-bottom:1px solid #a3a3a3;
+	
+	background-color: #f0f0f0;
+}
+.aqua iframe.wproFloatingDialog {
+	background-color: #f0f0f0;
+}

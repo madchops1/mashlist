@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Header xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><soapenv:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><v4:SignatureProofOfDeliveryFaxReply xmlns:v4="http://fedex.com/ws/track/v4"><v4:HighestSeverity>ERROR</v4:HighestSeverity><v4:Notifications><v4:Severity>ERROR</v4:Severity><v4:Source>trck</v4:Source><v4:Code>5514</v4:Code><v4:Message>Signature Proof of Delivery letters for FedEx shipments are available for only 18 months.</v4:Message><v4:LocalizedMessage>Signature Proof of Delivery letters for FedEx shipments are available for only 18 months.</v4:LocalizedMessage></v4:Notifications><v4:TransactionDetail xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+<v4:CustomerTransactionId>TC01_US_E_SPOD_FAX_POS</v4:CustomerTransactionId>
+<v4:Localization>
+<v4:LanguageCode>EN</v4:LanguageCode>
+</v4:Localization>
+</v4:TransactionDetail><v4:Version xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+<v4:ServiceId>trck</v4:ServiceId>
+<v4:Major>4</v4:Major>
+<v4:Intermediate>0</v4:Intermediate>
+<v4:Minor>0</v4:Minor>
+</v4:Version></v4:SignatureProofOfDeliveryFaxReply></soapenv:Body></soapenv:Envelope>

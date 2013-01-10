@@ -1,0 +1,174 @@
+/* styles for displaying the editor */
+
+/* 
+ * NOTE: this stylesheet is also included into dialog windows.
+ * To isolate a style for the editor only use the .jetblack prefix.
+ * To indicate a style that is shared between the editor and dialog windows use the .wproDialogEditorShared prefix.
+ * To indicate a style that should only be used for dialog windows use the .wproDialog prefix
+ *
+ * To ensure that editor styles for this theme are isolated from other editors on the same page that might use a different theme please prefix with the name of your theme.
+*/
+/* styles for the main editor interface */
+/* used to hide elements */
+/* general html elements */
+.jetblack div {
+	color:#ffffff;
+}
+.jetblack button {
+	color:#ffffff;
+}
+.jetblack select {
+	background-color:#333333;
+	color: #ffffff;
+}
+.jetblack a,.jetblack a:link,.jetblack a:hover,.jetblack a:visited,.jetblack a:active {
+	color:#ffffff !important;
+}
+/* editor border and background */
+.jetblack div.wproBorder {
+	border:1px solid #000000;
+	background:#000000 url(editorBackground.gif) repeat-x top;
+}
+/* load message */
+.jetblack div.wproLoadMessage {
+	background-color:#ffffff;
+	color:#000000;
+	border:1px solid #000000;
+}
+.jetblack div.wproLoadMessage img {
+	vertical-align: top;
+}
+
+/* toolbars */
+/* toolbar buttons */
+/* button over */
+.jetblack button.wproOver {
+	border: #990000 1px solid;
+	background-color: #c64934;
+}
+/* button  down */
+.jetblack button.wproDown,.jetblack button.wproLatched,.jetblack button.wproLatchedOver {
+	border: #660000 1px solid;
+	background-color: #990000;
+}
+/* button active */
+.jetblack button.wproLatched {
+	background-color:#990000;
+}
+/* button active over */
+.jetblack button.wproLatchedOver {
+	background-color: #c64934;
+}
+/* button disabled */
+.jetblack button.wproDisabled {
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	opacity:0.3;
+}
+/* hidden button disabled */
+.jetblack button.wproHidden {
+	display: none;
+}
+/* custom drop-down lists */
+.jetblack button.wproDropDown {
+	background:right url(downarrow.gif) no-repeat;
+	border:1px solid #666666;
+}
+/* separators */
+.jetblack img.wproSeparator {
+	border-left:2px groove #333333 !important;
+}
+/* framefix repairs display of iframe width DO NOT ALTER */
+.jetblack fieldset.wproFrameFix {
+	border-top:5px solid #c64934;
+	border-left:0px solid #000000;
+	border-right:0px solid #000000;
+	background-color:#999999;
+}
+/* tag path */
+.jetblack div.wproTagPath {
+	border-left:1px solid #666666;
+	border-right:1px solid #666666;
+	border-top:1px solid #666666;
+	background-color: #333333;
+}
+/* spacer before tabs */
+.jetblack div.wproTabNoTab {
+	border-top: 1px solid #666666;
+}
+/* generic link styles for tabs */
+.jetblack .wproTabHolder .wproTabs button {
+	color:#ffffff;
+}
+/* active tab */
+.jetblack button.wproTButtonUp {
+	border-top:1px solid #333333;
+	border-bottom:1px solid #666666;
+	border-left:1px solid #666666;
+	border-right:1px solid #666666;
+	height: 21px;
+	background-color:#333333;
+}
+/* mousedown on tab */
+.jetblack button.wproTButtonMouseDown {
+	border:1px solid #666666;
+	background-color:#666666;
+}
+/* inactive tab */
+.jetblack button.wproTButtonDown {
+	border:1px solid #333333;
+	border-top: 1px solid #666666;
+}
+/* message area to right of tabs */
+.jetblack div.wproMessages {
+	border-top:1px solid #666666;
+}
+/* floating menus: custom drop-downs, menus and context menu */
+/* this holds menus while they are invisible */
+/* menu borders and background */
+.jetblack div.wproFloatingMenu,.jetblack iframe.wproFloatingMenu {
+	border:1px solid #000000;
+	background: #000000;
+	filter:alpha(opacity=85) progid:DXImageTransform.Microsoft.Shadow(color=#707070,direction=135,strength=3);
+	-moz-opacity:0.85;
+	opacity:0.85;
+}
+/* generic link styles for menus */
+.jetblack div.wproFloatingMenu a,.jetblack div.wproFloatingMenu a:link,.jetblack div.wproFloatingMenu a:active,.jetblack div.wproFloatingMenu a:hover,.jetblack div.wproFloatingMenu a:visited {
+	color:#ffffff !important;
+}
+/* mouse over menu item */
+.jetblack div.wproFloatingMenu a.wproOver,.jetblack div.wproFloatingMenu a.wproOver:link,.jetblack div.wproFloatingMenu a.wproOver:active,.jetblack div.wproFloatingMenu a.wproOver:hover,.jetblack div.wproFloatingMenu a.wproOver:visited {
+	color:#ffffff !important;
+	background-color:#c64934;
+}
+.jetblack div.wproFloatingMenu div.wproSeparator {
+	border-top: 1px solid #666666;
+}
+/* separators in menus */
+.jetblack div.wproFloatingMenu div.wproTitleSeparator {
+	background-color: #333333;
+	color: #ffffff;
+}
+/* active menu items */
+.jetblack div.wproFloatingMenu a.wproLatched {
+	border: #660000 1px solid;
+	background-color: #990000;
+	color: #ffffff;
+}
+/* disabled menu items */
+.jetblack div.wproFloatingMenu a.wproDisabled {
+	display:none;
+}
+/* optional iframe dialogs */
+/* NOTE: so that we don't have to enter the design of this again for dialog windows we use the .wproDialogEditorShared prefex */
+.jetblack .wproFloatingDialog {
+	border: 5px solid #c64934;
+	background-color: #000000;
+	filter:alpha(opacity=95) progid:DXImageTransform.Microsoft.Shadow(color=#707070,direction=135,strength=3);
+	-moz-opacity:0.95;
+	opacity:0.95;
+}
+.jetblack iframe.wproFloatingDialog {
+	background-color: #000000;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Header xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><soapenv:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><v4:TrackNotificationReply xmlns:v3="http://fedex.com/ws/track/v3" xmlns:v4="http://fedex.com/ws/track/v4"><v4:HighestSeverity>SUCCESS</v4:HighestSeverity><v4:Notifications><v4:Severity>SUCCESS</v4:Severity><v4:Source>trck</v4:Source><v4:Code>0</v4:Code><v4:Message>Request was successfully processed.</v4:Message><v4:LocalizedMessage>Request was successfully processed.</v4:LocalizedMessage></v4:Notifications><v4:TransactionDetail xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+<v4:CustomerTransactionId>Sample_V4</v4:CustomerTransactionId>
+<v4:Localization>
+<v4:LanguageCode>EN</v4:LanguageCode>
+</v4:Localization>
+</v4:TransactionDetail><v4:Version xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+<v4:ServiceId>trck</v4:ServiceId>
+<v4:Major>4</v4:Major>
+<v4:Intermediate>0</v4:Intermediate>
+<v4:Minor>0</v4:Minor>
+</v4:Version><v4:DuplicateWaybill>false</v4:DuplicateWaybill><v4:MoreDataAvailable>false</v4:MoreDataAvailable><v4:Packages><v4:TrackingNumber>918553992238</v4:TrackingNumber><v4:TrackingNumberUniqueIdentifiers>2454476000~918553992238</v4:TrackingNumberUniqueIdentifiers><v4:CarrierCode>FDXE</v4:CarrierCode><v4:ShipDate>2008-01-10</v4:ShipDate><v4:Destination><v4:City>DORVAL</v4:City><v4:StateOrProvinceCode>PQ</v4:StateOrProvinceCode><v4:CountryCode>CA</v4:CountryCode><v4:Residential>false</v4:Residential></v4:Destination><v4:RecipientDetails><v4:NotifyOnDelivery>true</v4:NotifyOnDelivery><v4:NotifyOnException>false</v4:NotifyOnException></v4:RecipientDetails></v4:Packages></v4:TrackNotificationReply></soapenv:Body></soapenv:Envelope>

@@ -1,0 +1,178 @@
+/* This CSS file controls the appearance of dialog windows */
+/* styles for dialog plugins */
+body {
+	font-family:LucidaGrande, Verdana, Arial, Helvetica, sans-serif;
+	background-color:#f0f0f0;
+	background-image:url(background.gif);
+}
+.wproCore_fileBrowser .bottomOptions {
+	border-top: 1px solid #a3a3a3;
+}
+.wproCore_fileBrowser .topOptions {
+	border-bottom: 1px solid #a3a3a3;
+}
+.wproCore_fileBrowser_outlook {
+	background-color: #d2d7e1;
+	background-image: none;
+}
+.wproCore_fileBrowser_outlook .outlookList a.selected {
+	background: url(sideBarSelected.gif) repeat-x center;
+}
+.wproCore_fileBrowser .thumbHolder div.thumb {
+	border-width: 0px;
+	padding: 2px;
+}
+.wproCore_fileBrowser .thumbHolder label.name span {
+	color: #3470cc;
+}
+.wproCore_fileBrowser .thumbHolder .selected label.name span {
+	color: #ffffff;
+}
+.wproCore_fileBrowser table.fileTable th.outset {
+	border-top-width: 0px;
+	border-left-width: 0px;
+	padding: 0px 5px 0px 5px;
+	background: url(tabInactive.gif) repeat-x center;
+}
+.wproCore_fileBrowser table.fileTable th.sorted {
+	background: url(tabActive.gif) repeat-x center;
+}
+.wproCore_specialCharacters .selectCharacter {
+	border-bottom: 1px solid #a3a3a3;
+}
+.wproCore_snippets .UISelectLeftCol {
+	background-color: #d2d7e1;
+}
+
+/* General HTML elements */
+a {
+	color:#0000FF;
+}
+input,select,option,button {
+	font-family:LucidaGrande, Verdana, Arial, Helvetica, sans-serif;
+}
+fieldset {
+	border: 1px solid #a3a3a3;
+}
+legend {
+	font-weight: bold;
+	color: #000000;
+}
+/* title bar, used only for iframe dialogs */
+.titleBar {
+	background: url(titleBar.gif) repeat-x top;
+	color: #000000;
+	font-weight: normal;
+	font-size: 13px;
+	text-align: center;
+}
+.titleBar .closeButton {
+	float: left;
+	cursor: default;
+	margin: -4px;
+}
+/* iframe used for showing previews */
+.previewFrame {
+	border:1px solid #dadada;
+	background-color:#ffffff;
+}
+/* holder for buttons along bottom of dialog window */
+.buttonHolderContainer {
+	border-top:1px solid #a3a3a3;
+}
+/* help bar at top of window */
+.helpBar {
+	border-bottom:1px solid #dadada;
+}
+/* selected item colors */
+.selected,button.selected,a.selected {
+	color:#ffffff;
+	background-color:#3470cc;
+}
+/* indented borders */
+.inset, .insetWhite {
+	border-right:1px solid #ffffff;
+	border-top:1px solid #a3a3a3;
+	border-left:1px solid #a3a3a3;
+	border-bottom:1px solid #ffffff;
+	background-color: #ffffff;
+}
+/* outdented borders */
+.outset {
+	border-right:#a3a3a3 1px solid;
+	border-top:#a3a3a3 1px solid;
+	border-left:#a3a3a3 1px solid;
+	border-bottom:#a3a3a3 1px solid;
+}
+/* color picker UI element */
+button.UIColorPicker div {
+	border:1px solid #a3a3a3;
+}
+/* Image radio UI element */
+.UIImageRadio a.selected {
+	color:#ffffff;
+}
+.UIImageRadio a img {
+	padding:0px;
+	margin:0px;
+	border:1px solid #a3a3a3;
+}
+/* tabbed interface */
+.UITabbedTabHolder {
+	padding-left:0px;
+	padding-top: 0px;
+	padding-bottom: 6px;
+	text-align:center;
+	margin-top:-8px;
+}
+.UITabbedTabHolder a {
+	color:#000000;
+	background: url(tabInactive.gif) repeat-x center;
+	text-decoration:none;
+	display:inline;
+	float:none;
+	padding:3px 15px;
+	margin: 0px;
+	margin-right: -1px;
+	border: 1px solid #a3a3a3;
+}
+.UITabbedTabHolder a.selected {
+	color:#000000;
+	background: url(tabActive.gif) repeat-x center;
+	background-color:#f0f0f0;
+	padding:3px 15px;
+	margin:0px;
+	margin-right: -1px;
+	border: 1px solid #a3a3a3;
+}
+.UITabbedPaneHolder {
+	background: #e8e8e8 url(backgroundDark.gif);
+	margin-top: 16px;
+	margin-bottom: 0px;
+	padding: 3px 5px 0px 5px;
+	clear:both;
+	border-width:1px;
+}
+.UITabbedPane {
+	display:none;
+	margin: 0px;
+	padding: 0px;
+}
+.UITabbedPaneHolder .UITabbedPaneHolder {
+}
+.UITabbedPaneHolder .UITabbedPaneHolder .UITabbedTabHolder {
+}
+/* small inline error messages */
+div.smallWarning {
+	border:1px solid #a3a3a3;
+	background-color:#FFFF99;
+}
+/* small inline information messages */
+div.smallInformation {
+	border:1px solid #a3a3a3;
+	background-color:#FFFF99;
+}
+/* message exit: error and information messages */
+.messageExitTitleBar {
+	border-bottom:2px groove #ffffff;
+}

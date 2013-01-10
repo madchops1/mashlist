@@ -1,0 +1,97 @@
+/* Main Navigation / Primary Links */
+
+#mb-primarylinks {
+	float:left;
+	list-style:none;
+	margin:0;
+	padding:10px 0 0px;
+	background: none;
+}
+
+body.home #mb-primarylinks {
+	padding: 4px;
+}
+
+#mb-primarylinks li {
+	display: block;
+	float: left;
+	margin: 0 3px;
+	border: 3px solid #555;
+	background: #b0b2b5 url(images/home_primary_links_bg.jpg) repeat-x top;
+	text-align: center;
+	_display: inline;
+}
+
+body.home #mb-primarylinks li {
+	height: 110px;
+}
+
+#mb-primarylinks li:hover {border-color: #701414;}
+
+#mb-primarylinks li.first {margin-left: 0;}
+#mb-primarylinks li.last {margin-right: 0;}
+
+#primary_links_wrap {
+  position: absolute;
+  bottom: 0;
+  right: 8px;
+  float: left;
+  padding: 2px;
+}
+
+body.home #primary_links_wrap {
+	position: relative; 
+	right: auto; 
+	bottom: auto; 
+	float: none; 
+	width: 765px; 
+	margin: 6px auto; 
+	overflow: hidden;
+	background: #fff;
+	padding:2px;
+}
+
+body.home #mb-primarylinks li:hover {
+  border-color: #701414;
+}
+
+body.home #mb-primarylinks a span {
+	float: left;
+	width: 127px;
+	padding: 8px 6px;
+	margin-left: -0px;
+	font-size: 11px;
+	color: #333;
+	text-shadow: none;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: left;
+}
+
+body.home #primary_links_wrap {
+  border: none;
+}
+
+#mb-primarylinks a {
+	/*background: url(images/primary-link-bg.gif) no-repeat 0 0;*/
+	display: block;
+	width: 139px;
+	height: 18px;
+	padding: 3px 0 0 0;
+	background: url(images/mb_primarylink_bullet_double.gif) no-repeat 3px 3px;
+	font-family: Palatino, Georgia, Times, serif;
+	font-size: 12px;
+	text-decoration: none;
+	text-shadow:0 1px 1px #FFFFFF;
+	outline: none;
+}
+
+body.home #mb-primarylinks a {
+	
+	color: #701414;
+}
+
+#mb-primarylinks a:hover {
+	color: #701414;
+}
+
+
